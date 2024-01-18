@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "lunaryportfolio",
+  "private_key_id": "629466c528c75a8d6a064888e63b5679c92a4fdb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC5LgoSn/cY4i2w\n7+5GwZ6ITc5xJUS8SRV99jFEsa6Sc1sLi7896DYTHOeR5aEG02LPKmtRZ18gLK6g\nYEdY1JiLTgfKuf+pJ9pq2w4jEKzPj4JWozbWTajDt6Pnfvz8e6nkRwZFKsP706jY\nP5DVWs4xzlIHsbNtjjh6o8/gKbyro7hB8j2xxrZdtrrhVcXREceQuJJ3JjMUrOnJ\n/zyBsAKAesaN2gMFRpIDQbFjg7LDv5lVQ7VnRPGCFRNFoovOzxUOWss8sp1N0CKk\nTJrvzqWYf7w3K2lBqu7q0T/If+QbzdCjB4amR9+Po05VA0/R+KzkRGe4h+jSk8GI\n4Jiby6VJAgMBAAECggEAEp3loVhiV9Fqqokp5AR/KFDk2kyBi98FFslzdpEubcbE\ndnVcNUsXyfVz9R+oKq7XFjYQ3U7j1LDpSsejJJ5q9PD+qODo1Qa5V1jNI7VUykvb\n3KiX+2o0ofM1D9xHxCe36B1D13Gki7gMbNZ8fGvz+DSNMVIqKcTMj3fR5EVjPxYQ\nb6pVu+vEfWF06HnQ94pRrys71/aBXN470Z13RHyIjKZEZHMT3i/FekitnKpNJOLW\noHbN7VIaexDUzSRaEouqstXgiK+ECci5///r5zPkWSTB80b0fLRo8YQfn15aU9YN\njxbGjH1+dVAhFQkX/Ot55bb57DF33hUfcR2Pf9ETSQKBgQD3FqtOwfeM+QVbpbUR\na4+GJXvwIUmjKGPTEdMKP5yzLbrvyUVCuWjpcLULMYP8veKZOv2cB7LEMIzIo9m6\np0tgmhcHNRS+Xu9mw4jX5NzoaTJ4cnYBP5zkBV4F6DBCEUFtMuuWDHZtokXrnCeu\nCVeFYov02KWooOc3RhlT6g18YwKBgQC/28bJzsa6LDnr94a+3Ea1aCUF4t1DCoey\nF4YSUkxpadldYlnwWWa5gstWssrTCj3YURS2cdTb9p0LiHvw+vIHjr2967D1jDw0\nvUfRyisu/Q8HabOuECm/IfhS1zGzajGR47o4vlb9g2ygjyxOYBRkJr2rWX8XagbH\naKK4m9u5YwKBgB9qzXtlJGHTZAAEMOK3J3eqGnks8l0BjLfQw2HBNt59iRBmKh1S\nz+kmwI5czGh9iGttWcPWIr/ZYH0+gDfAf9AXp6ft8uZF0fDiGetBmWkfvyAbha+g\n9AT2Pb9Ih6JO6V/GIrhge0pzYKqVn2H8pBk8r4kBZwbq9ptLmXrW/sH7AoGAMVh9\nkHo2crvdSeuoJH7TUOUwYIsxDYUv0YZrXVr9fD9VQMeDCmZ0HVKeqfXiZNVFgtWX\n1jUA4nJTghvghOKGTZtRAgAUy5L+CTKFvleZM8SykN2G8UYG9rnt/KCMj/DIPxWr\nV9zc0udykPlCFAZyODAeqGukXIlQpQkskP7FTLECgYB1FNs/65KVlmW5euFTEySu\nWlxaoOtdwBywz+ItwKQaSPxz6o6AbUj/qHsVBvVGoqQuFBLD6+TQ0eeEVT3IxSF+\nkSP7tG++qyOEK4FWdE2+Bh+SiEqN5b7ABUniuMUfWflx1FtNzAtkUwXhZLV75+JL\n0kJcaMyGvkPKXkyW1xPAMA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "googlesheetapi@lunaryportfolio.iam.gserviceaccount.com",
+  "client_id": "110481068781138026443",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/googlesheetapi%40lunaryportfolio.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
