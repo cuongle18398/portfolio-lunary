@@ -1,6 +1,9 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
+import { ImBook } from "react-icons/im";
+import { SiYourtraveldottv } from "react-icons/si";
+import { IoGameControllerOutline } from "react-icons/io5";
 
 function AboutCard() {
   return (
@@ -8,7 +11,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Lunary </span>,
+            Hi Everyone, I am <span className="purple">Lunary </span>, a
             <span className="purple"> Vietnamese</span> illustrator in <span className="purple"> Ho Chi Minh.</span>
             <br />
             I create colorful characters using big bold shapes and strong lines.
@@ -19,20 +22,20 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Reading
+              <ImPointRight /> Reading <ImBook />
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Travelling <SiYourtraveldottv />
             </li>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Playing Games <IoGameControllerOutline />
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
+          {/* <p style={{ color: "rgb(155 126 172)" }}>
             "Strive to build things that make a difference!"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Lunary</footer> */}
         </blockquote>
       </Card.Body>
     </Card>
