@@ -1,17 +1,9 @@
 html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  );
+  --section-background-color: linear-gradient(180deg, rgba(0,27,121,1) 60%, rgba(22,64,214,1) 100%);
 
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
-  );
+  --image-gradient: linear-gradient(180deg, rgba(0,27,121,1) 60%, rgba(22,64,214,1) 100%);
 
-  --imp-text-color: rgba(239,174,174,255)
+  --imp-text-color: #EF3F70
 }
 
 .purple {
@@ -62,13 +54,13 @@ button:focus {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: #1640D6;
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: #1640D6;
   border-radius: 12px;
 }
 
@@ -97,7 +89,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: rgba(239,174,174,255) !important;
+  background-color: #EF3F70 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -155,8 +147,8 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: auto !important;
+  width: 7.5em !important;
 }
 
 .navbar-nav .nav-link {
@@ -194,7 +186,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: rgba(239,174,174,255);
+  background: var(--imp-text-color);
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -281,17 +273,17 @@ button:focus {
 }
 
 .main-name {
-  color: rgba(239,174,174,255);
+  color: var(--imp-text-color);
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: rgba(239,174,174,255) !important;
+  color: var(--imp-text-color) !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: rgba(239,174,174,255) !important;
+  color: var(--imp-text-color) !important;
 }
 
 @media (max-width: 767px) {
@@ -383,9 +375,9 @@ button:focus {
 }
 
 .home-social-icons:hover {
-  color: rgba(239,174,174,255);
-  box-shadow: 0 0 5px rgba(239,174,174,255);
-  text-shadow: 0 0 2px rgba(239,174,174,255);
+  color: var(--imp-text-color);
+  box-shadow: 0 0 5px var(--imp-text-color);
+  text-shadow: 0 0 2px var(--imp-text-color);
 }
 
 .social-icons {
@@ -395,7 +387,7 @@ button:focus {
 }
 
 .icon-colour {
-  color: rgba(239,122,174,255) !important;
+  color: var(--imp-text-color) !important;
 }
 
 /* --------- */
@@ -520,14 +512,14 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: rgba(239,174,174,255) !important;
-  border-color: rgba(239,174,174,255) !important;
+  background-color: var(--imp-text-color) !important;
+  border-color: var(--imp-text-color) !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: rgba(239,120,174,255) !important;
-  border-color: rgba(239,120,174,255) !important;
+  background-color: var(--imp-text-color) !important;
+  border-color: var(--imp-text-color) !important;
 }
 .btn:focus {
   outline: none !important;
@@ -557,7 +549,7 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(239,174,174,255) !important;
+  border: 1.7px solid var(--imp-text-color) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
@@ -576,7 +568,7 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(239,174,174,255) !important;
+  border: 2.2px solid var(--imp-text-color) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -647,7 +639,7 @@ button:focus {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #8a49a8;
+  border-left: 2px solid var(--imp-text-color);
   position: relative;
 }
 
