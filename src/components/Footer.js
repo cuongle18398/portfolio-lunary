@@ -1,9 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
+  AiFillBehanceCircle,
 } from "react-icons/ai";
 import { FaFacebook, FaGooglePlus } from "react-icons/fa";
 
@@ -14,7 +12,7 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Tho Pham - Lunary</h3>
+          <h3>Designed and Developed by Tho Pham</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year}</h3>
@@ -33,32 +31,22 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/lnr.lunaryypham/"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href=""
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
                 href=""
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaGooglePlus />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://www.behance.net/thphm70/projects"
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillBehanceCircle />
               </a>
             </li>
           </ul>

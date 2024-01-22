@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
 import { ImBook } from "react-icons/im";
 import { SiYourtraveldottv } from "react-icons/si";
 import { IoGameControllerOutline } from "react-icons/io5";
@@ -22,13 +21,13 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Reading <ImBook />
+              <ImBook /> Reading
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling <SiYourtraveldottv />
+              <SiYourtraveldottv /> Travelling
             </li>
             <li className="about-activity">
-              <ImPointRight /> Playing Games <IoGameControllerOutline />
+              <IoGameControllerOutline /> Playing Games
             </li>
           </ul>
 

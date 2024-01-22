@@ -1,10 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.png";
+import myImg from "../../Assets/Cover/Ava.png";
 import Tilt from "react-parallax-tilt";
 import {
-  AiOutlineTwitter,
-  AiFillInstagram,
+  AiFillBehanceCircle,
 } from "react-icons/ai";
 import { FaFacebook, FaGooglePlus } from "react-icons/fa";
 
@@ -65,16 +64,6 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/lnr.lunaryypham/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
                   href=""
                   target="_blank"
                   rel="noreferrer"
@@ -85,12 +74,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href=""
+                  href="https://www.behance.net/thphm70/projects"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <AiFillBehanceCircle />
                 </a>
               </li>
             </ul>
