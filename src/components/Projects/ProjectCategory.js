@@ -3,7 +3,13 @@ import { Container } from "react-bootstrap";
 import Particle from "../Particle";
 import { motion, AnimatePresence } from "framer-motion";
 
+function importAll(r) {
+    return r.keys().map(r);
+}
+
 const ProjectCategory = (props) => {
+
+    const imageList = importAll(require.context("../../Assets/ProjectDetails/Logo", false, /\.(png|jpe?g|svg)$/));
 
     return (
         <Container fluid className="project-detail-section">
@@ -20,6 +26,11 @@ const ProjectCategory = (props) => {
                         </h1>
                         <br />
                         <br />
+                        <div>
+                            {imageList.map((image, index) => (
+                                <img key={index} src={image} alt={`Gallery img ${index}`} />
+                            ))}
+                        </div>
                     </motion.div>
                 </AnimatePresence>
             </Container>
