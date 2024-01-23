@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
-import Techstack from "./Techstack";
+import Exp from "../Experience/Experience";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import Client from "./Client";
 import { motion, AnimatePresence } from "framer-motion";
 
 function About() {
@@ -41,18 +41,30 @@ function About() {
                 <img src={laptopImg} alt="about" className="img-fluid" />
               </Col>
             </Row>
-            <h1 className="project-heading">
+            {/* <h1 className="project-heading">
               Professional <strong className="purple">Skillset </strong>
             </h1>
+            <Techstack /> */}
 
-            <Techstack />
-
+            <h1 className="exp-heading">
+              <strong className="purple">Experience </strong>
+            </h1>
+            <br />
+            <Exp />
+            <br />
+            <br />
             <h1 className="project-heading">
               <strong className="purple">Tools</strong> I use
             </h1>
+            <br />
             <Toolstack />
-
-            {/* <Github /> */}
+            <br />
+            <br />
+            <h1 className="project-heading">
+              My <strong className="purple">Clients </strong>
+            </h1>
+            <br />
+            <Client />
           </motion.div>
         </AnimatePresence>
       </Container>
