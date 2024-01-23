@@ -1,9 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { motion, AnimatePresence } from "framer-motion";
 import Slider from "react-slick";
-// import "~slick-carousel/slick/slick.css";
-// import "~slick-carousel/slick/slick-theme.css";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import socialpost from "../../Assets/Projects/Project-Bg/social-post.png";
@@ -45,28 +43,32 @@ function Projects() {
               <ProjectCard
                 imgPath={socialpost}
                 title="SOCIAL POST"
-              // ghLink="https://github.com/soumyajit4419/Chatify"
+                Link='/socialposts'
               />
               <ProjectCard
                 imgPath={illu}
                 title="ILLUSTRATION"
-              // ghLink="https://github.com/soumyajit4419/Editor.io"
+                Link='/illustration'
               />
               <ProjectCard
                 imgPath={layout}
                 title="LAYOUT"
+                Link='/layout'
               />
               <ProjectCard
                 imgPath={logo}
                 title="LOGO"
+                Link='/logo'
               />
               <ProjectCard
                 imgPath={package_}
                 title="PACKAGE"
+                Link='/package'
               />
               <ProjectCard
                 imgPath={stationery}
                 title="STATIONERY"
+                Link='/stationery'
               />
             </Slider>
             <br />

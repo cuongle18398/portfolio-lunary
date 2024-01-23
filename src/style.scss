@@ -527,8 +527,8 @@ button:focus {
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: var(--imp-text-color) !important;
-  border-color: var(--imp-text-color) !important;
+  background-color: #d41148 !important;
+  border-color: #d41148 !important;
 }
 .btn:focus {
   outline: none !important;
@@ -802,4 +802,13 @@ button:focus {
 .client-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
+}
+//====Project Detail====//
+.project-detail-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+  height: 100vh;
 }
