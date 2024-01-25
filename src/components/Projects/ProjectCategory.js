@@ -1,7 +1,8 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 import Particle from "../Particle";
 import { motion, AnimatePresence } from "framer-motion";
+import Projects from "./Projects";
 
 function importAll(r) {
     return r.keys().map(r);
@@ -26,10 +27,14 @@ const ProjectCategory = (props) => {
                         </h1>
                         <br />
                         <br />
-                        <div>
-                            {imageList.map((image, index) => (
-                                <img key={index} src={image} alt={`Gallery img ${index}`} />
-                            ))}
+                        <div className="project-list">
+                            <Row className="project-content">
+                                {imageList.map((image, index) => (
+                                    <Col key={index} sm={12} md={12} lg={12} className="project-item">
+                                        <img src={image} className="img-fluid" alt={`Gallery img ${index}`} />
+                                    </Col>
+                                ))}
+                            </Row>
                         </div>
                     </motion.div>
                 </AnimatePresence>

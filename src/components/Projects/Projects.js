@@ -13,13 +13,13 @@ import stationery from "../../Assets/Projects/Project-Bg/stationery.png";
 
 function Projects() {
   const settings = {
-    dots: true,
-    lazyLoad: true,
     infinite: true,
     speed: 500,
+    autoplaySpeed: 3000,
+    autoplay: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    initialSlide: 2
+    initialSlide: 0
   };
   return (
     <Container fluid className="project-section">

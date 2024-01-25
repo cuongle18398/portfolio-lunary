@@ -463,7 +463,7 @@ button:focus {
   -webkit-box-shadow: 7px -6px 14px -2px rgba(38,41,46,0.87);
   -moz-box-shadow: 7px -6px 14px -2px rgba(38,41,46,0.87);
   color: white !important;
-  background-color: rgba(147, 138, 138, 0.62) !important;
+  background-color: rgba(147, 138, 138, 0.42) !important;
   backdrop-filter: blur(5px);
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
@@ -810,4 +810,23 @@ button:focus {
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
+}
+
+.project-content {
+  box-shadow: 7px -6px 14px -2px rgba(38,41,46,0.87);
+  -webkit-box-shadow: 7px -6px 14px -2px rgba(38,41,46,0.87);
+  -moz-box-shadow: 7px -6px 14px -2px rgba(38,41,46,0.87);
+  background-color: rgba(147, 138, 138, 0.42) !important;
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+  margin: 20px;
+
+}
+.project-item img {
+
+  transition: all 0.5s ease 0s !important;
+  &:hover {
+    transform: scale(1.02) !important;
+    overflow: hidden !important;
+  }
 }
