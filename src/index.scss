@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../src/Assets//Font/1FTV-asbigan-regular.ttf') format('truetype');
+}
 body {
   margin: 0;
-  font-family: "Raleway", serif !important;
+  font-family: "CustomFont", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,27,121,1) 50%, rgba(22,64,214,1) 100%);

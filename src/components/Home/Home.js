@@ -5,8 +5,21 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import { CiCircleChevDown } from "react-icons/ci";
 
-function Home() {
+
+const scrollDown = () => {
+  const targetElement = document.getElementById('about');
+  // Scroll đến phần tử mục tiêu
+  targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+
+
+const Home = () => {
+
+  const iconstyle = { color: "white", fontSize: "2.5em" }
+
   return (
     <section>
       <Container fluid id="home">
@@ -46,6 +59,13 @@ function Home() {
                   />
                 </Col>
               </Row>
+              <div id="lead-overlay"></div>
+
+              <div id="lead-down">
+                <span class="icon-container" onClick={() => scrollDown()}>
+                  <CiCircleChevDown style={iconstyle} />
+                </span>
+              </div>
             </motion.div>
           </AnimatePresence>
         </Container>
