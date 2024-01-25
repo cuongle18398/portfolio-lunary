@@ -384,17 +384,20 @@ button:focus {
   box-shadow: 0 0 5px var(--imp-text-color);
   text-shadow: 0 0 2px var(--imp-text-color);
 }
-
-#lead-overlay{
-  position:absolute;
-  height:100%;
-  width:100%;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  z-index:1
+.corner {
+  background-size: cover !important;
+  position: fixed;
+  pointer-events: none;
+  z-index: 11;
+  height: 50%;
+  width: 50%;
 }
+.moon{
+  background: url(./Assets/Background/Moon.png) no-repeat left bottom;
+  top: 0;
+  right: 0;
+}
+
 #lead-down{
   cursor:pointer;
   position:absolute;

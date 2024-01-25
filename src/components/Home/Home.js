@@ -6,6 +6,7 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 import { CiCircleChevDown } from "react-icons/ci";
+import moon from "../../Assets/Background/Moon.png"
 
 
 const scrollDown = () => {
@@ -31,6 +32,7 @@ const Home = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
+              <div className="corner moon preload"></div>
               <Row>
                 <Col md={7} className="home-header">
                   <h1 style={{ paddingBottom: 15 }} className="heading">
@@ -59,8 +61,6 @@ const Home = () => {
                   />
                 </Col>
               </Row>
-              <div id="lead-overlay"></div>
-
               <div id="lead-down">
                 <span class="icon-container" onClick={() => scrollDown()}>
                   <CiCircleChevDown style={iconstyle} />
