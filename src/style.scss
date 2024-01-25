@@ -385,6 +385,37 @@ button:focus {
   text-shadow: 0 0 2px var(--imp-text-color);
 }
 
+#lead-overlay{
+  position:absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:1
+}
+#lead-down{
+  cursor:pointer;
+  position:absolute;
+  left:0;
+  right:0;
+  width:100%;
+  text-align:center;
+  z-index:10;
+  bottom:15px;
+  color:white;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
 .social-icons {
   display: inline-block !important;
   padding-right: 15px;
@@ -828,35 +859,5 @@ button:focus {
   &:hover {
     transform: scale(1.02) !important;
     overflow: hidden !important;
-  }
-}
-#lead-overlay{
-  position:absolute;
-  height:100%;
-  width:100%;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  z-index:1
-}
-#lead-down{
-  cursor:pointer;
-  position:absolute;
-  left:0;
-  right:0;
-  width:100%;
-  text-align:center;
-  z-index:10;
-  bottom:15px;
-  color:white;
-  animation: bounce 2s infinite;
-}
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
   }
 }

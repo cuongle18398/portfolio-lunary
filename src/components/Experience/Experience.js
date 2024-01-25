@@ -10,8 +10,8 @@ const Exp = () => {
             <VerticalTimeline>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                    contentStyle={{ background: 'rgba(33, 150, 243, 0.6)', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgba(33, 150, 243, 0.6)' }}
                     date="08/2022 - 11/2023"
                     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                     icon={<MdWorkOutline />}
@@ -24,8 +24,8 @@ const Exp = () => {
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                    contentStyle={{ background: 'rgba(33, 150, 243, 0.6)', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgba(33, 150, 243, 0.6)' }}
                     date="05/2022 - 08/2022"
                     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                     icon={<MdWorkOutline />}
@@ -38,8 +38,8 @@ const Exp = () => {
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--school"
-                    contentStyle={{ background: 'rgb(243, 150, 33)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(243, 150, 33)' }}
+                    contentStyle={{ background: 'rgba(243, 150, 33, 0.6)', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgba(243, 150, 33, 0.6)' }}
                     date="2016 - 2020"
                     iconStyle={{ background: 'rgb(243, 150, 33)', color: '#fff' }}
                     icon={<MdOutlineSchool />}
