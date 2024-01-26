@@ -1,12 +1,24 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import { motion, AnimatePresence } from "framer-motion";
-import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 import { CiCircleChevDown } from "react-icons/ci";
-import moon from "../../Assets/Background/Moon.png"
+import bglogo from "../../Assets/Background/mylogo.png"
+
+
+
+window.addEventListener('scroll', function () {
+  var section = document.getElementById('home-header');
+  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollPosition > 100) {
+    section.style.opacity = 0;
+  } else {
+    section.style.opacity = 1;
+  }
+});
 
 
 const scrollDown = () => {
@@ -33,39 +45,19 @@ const Home = () => {
               exit={{ opacity: 0 }}
             >
               <div className="corner moon preload"></div>
-              <Row>
-                <Col md={7} className="home-header">
-                  <h1 style={{ paddingBottom: 15 }} className="heading">
-                    Hi There!{" "}
-                    <span className="wave" role="img" aria-labelledby="wave">
-                      👋🏻
-                    </span>
-                  </h1>
+              <div className="corner cloud-left preload"></div>
+              <div id="home-header">
+                <Col md={12} className="home-header" >
+                  <Image className="home-bg" src={bglogo} alt="home-bg" />
 
-                  <h1 className="heading-name">
-                    I'M
-                    <strong className="main-name"> LUNARY</strong>
-                  </h1>
-
-                  <div style={{ padding: 50, textAlign: "left" }}>
-                    <Type />
-                  </div>
                 </Col>
-
-                <Col md={5} style={{ paddingBottom: 20 }}>
-                  <img
-                    src={homeLogo}
-                    alt="home pic"
-                    className="img-fluid"
-                    style={{ maxHeight: "450px" }}
-                  />
-                </Col>
-              </Row>
-              <div id="lead-down">
-                <span class="icon-container" onClick={() => scrollDown()}>
-                  <CiCircleChevDown style={iconstyle} />
-                </span>
+                <div id="lead-down">
+                  <span class="icon-container" onClick={() => scrollDown()}>
+                    <CiCircleChevDown style={iconstyle} />
+                  </span>
+                </div>
               </div>
+
             </motion.div>
           </AnimatePresence>
         </Container>
