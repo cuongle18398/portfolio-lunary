@@ -257,10 +257,8 @@ button:focus {
 }
 
 .home-header {
-  position: absolute;
-  top: 30%;
-  right: 0;
   text-align: center;
+  padding-top: 10vh;
   z-index: 11;
   img {
     width: 300px;
@@ -423,17 +421,30 @@ button:focus {
 // }
 
 #lead-down{
-  cursor:pointer;
   position:absolute;
   left:0;
   right:0;
-  width:100%;
   text-align:center;
+}
+
+#lead-up{
+  position:fixed;
+  right:5%;
+  bottom: 8%;
+  text-align:right;
+  opacity: 0;
+}
+
+.bounce {
+  cursor:pointer;
+  width:100%;
+  animation: bounce 2s infinite;
+  transition: opacity 0.5s ease-out;
   z-index:10;
   bottom:15px;
   color:white;
-  animation: bounce 2s infinite;
 }
+
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);

@@ -4,19 +4,22 @@ import { motion, AnimatePresence } from "framer-motion";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import { CiCircleChevDown } from "react-icons/ci";
+import { CiCircleChevDown, CiCircleChevUp } from "react-icons/ci";
 import bglogo from "../../Assets/Background/mylogo.png"
 
 
 
 window.addEventListener('scroll', function () {
   var section = document.getElementById('home-header');
+  var leadup = document.getElementById('lead-up');
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrollPosition > 100) {
     section.style.opacity = 0;
+    leadup.style.opacity = 1;
   } else {
     section.style.opacity = 1;
+    leadup.style.opacity = 0;
   }
 });
 
@@ -27,6 +30,9 @@ const scrollDown = () => {
   targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
+const scrollUp = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
 
 const Home = () => {
@@ -51,13 +57,17 @@ const Home = () => {
                   <Image className="home-bg" src={bglogo} alt="home-bg" />
 
                 </Col>
-                <div id="lead-down">
+                <div id="lead-down" className="bounce">
                   <span class="icon-container" onClick={() => scrollDown()}>
                     <CiCircleChevDown style={iconstyle} />
                   </span>
                 </div>
               </div>
-
+              <div id="lead-up" className="bounce">
+                <span class="icon-container" onClick={() => scrollUp()}>
+                  <CiCircleChevUp style={iconstyle} />
+                </span>
+              </div>
             </motion.div>
           </AnimatePresence>
         </Container>
