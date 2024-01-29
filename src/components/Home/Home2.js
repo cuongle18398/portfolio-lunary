@@ -7,12 +7,25 @@ import {
 } from "react-icons/ai";
 import { FaFacebook, FaGooglePlus } from "react-icons/fa";
 
+
+const scrollHandler = () => {
+  var text = document.getElementById('about-text');
+
+  if (window.scrollY > 100) {
+    text.classList.remove('hide');
+  } else {
+    text.classList.add('hide');
+  }
+};
+
+window.addEventListener("scroll", scrollHandler);
+
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
+          <Col md={8} className="home-about-description" id="about-text">
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>

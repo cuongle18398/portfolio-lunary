@@ -13,6 +13,7 @@ const scrollHandler = () => {
   var logo = document.getElementById('bg-logo');
   var leadup = document.getElementById('lead-up');
   var leaddown = document.getElementById('lead-down');
+  var about = document.getElementById('about');
 
   if (window.scrollY > 100) {
     logo.classList.add('hide');

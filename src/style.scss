@@ -345,6 +345,13 @@ button:focus {
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
+  opacity: 1;
+  transition: opacity 0.7s ease-in, transform 1s;
+  position: static;
+  &.hide {
+    opacity: 0;
+    transform: translate(-30px, 0px); /* Điều chỉnh vị trí xuất phát của phần tử */
+  }
 }
 
 .home-about-body {
