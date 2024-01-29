@@ -17,9 +17,14 @@ function NavBar() {
   const [navColour, updateNavbar] = useState(false);
 
   function scrollHandler() {
-    if (window.scrollY >= 20) {
+
+    var logo = document.getElementById('nav-logo');
+
+    if (window.scrollY > 100) {
+      logo.style.opacity = 1;
       updateNavbar(true);
     } else {
+      logo.style.opacity = 0;
       updateNavbar(false);
     }
   }
@@ -35,7 +40,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <img src={logo} id="nav-logo" className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

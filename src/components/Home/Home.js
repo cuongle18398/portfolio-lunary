@@ -9,20 +9,23 @@ import bglogo from "../../Assets/Background/mylogo.png"
 
 
 
-window.addEventListener('scroll', function () {
-  var section = document.getElementById('home-header');
+const scrollHandler = () => {
+  var logo = document.getElementById('bg-logo');
   var leadup = document.getElementById('lead-up');
-  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  var leaddown = document.getElementById('lead-down');
 
-  if (scrollPosition > 100) {
-    section.style.opacity = 0;
+  if (window.scrollY > 100) {
+    logo.classList.add('hide');
     leadup.style.opacity = 1;
+    leaddown.style.opacity = 0;
   } else {
-    section.style.opacity = 1;
+    logo.classList.remove('hide');
     leadup.style.opacity = 0;
+    leaddown.style.opacity = 1;
   }
-});
+};
 
+window.addEventListener("scroll", scrollHandler);
 
 const scrollDown = () => {
   const targetElement = document.getElementById('about');
@@ -52,9 +55,9 @@ const Home = () => {
             >
               <div className="corner moon preload"></div>
               <div className="corner cloud-left preload"></div>
-              <div id="home-header">
+              <div>
                 <Col md={12} className="home-header" >
-                  <Image className="home-bg" src={bglogo} alt="home-bg" />
+                  <Image className="home-bg" id="bg-logo" src={bglogo} alt="home-bg" />
 
                 </Col>
                 <div id="lead-down" className="bounce">

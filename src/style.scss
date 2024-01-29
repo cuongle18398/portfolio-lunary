@@ -149,6 +149,7 @@ button:focus {
 .logo {
   height: auto !important;
   width: 7.5em !important;
+  transition: all 0.7s ease-in-out;
 }
 
 .navbar-nav .nav-link {
@@ -246,26 +247,29 @@ button:focus {
   height: 100vh;
 }
 
-#home-header {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-}
-
 .home-header {
+  opacity: 1;
   text-align: center;
   padding-top: 8vh;
   z-index: 11;
+  transition: opacity 0.5s, transform 0.5s;
   img {
+    opacity: 1;
     width: 300px;
     max-width: 70%;
     height: auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .hide {
+    opacity: 0;
+    transform: translate(-30rem, -10rem); /* Điều chỉnh vị trí xuất phát của phần tử */
   }
 }
+
 
 .home-section {
   position: relative;
