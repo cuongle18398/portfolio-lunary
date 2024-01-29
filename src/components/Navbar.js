@@ -18,13 +18,9 @@ function NavBar() {
 
   function scrollHandler() {
 
-    var logo = document.getElementById('nav-logo');
-
     if (window.scrollY > 100) {
-      logo.style.opacity = 1;
       updateNavbar(true);
     } else {
-      logo.style.opacity = 0;
       updateNavbar(false);
     }
   }

@@ -252,7 +252,7 @@ button:focus {
   text-align: center;
   padding-top: 8vh;
   z-index: 11;
-  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s;//, transform 0.5s;
   img {
     opacity: 1;
     width: 300px;
@@ -266,7 +266,7 @@ button:focus {
   }
   .hide {
     opacity: 0;
-    transform: translate(-30rem, -10rem); /* Điều chỉnh vị trí xuất phát của phần tử */
+    //transform: translate(-30rem, -10rem); /* Điều chỉnh vị trí xuất phát của phần tử */
   }
 }
 
