@@ -11,15 +11,24 @@ import bglogo from "../../Assets/Background/mylogo.png"
 
 const scrollHandler = () => {
   var logo = document.getElementById('bg-logo');
+  var moon = document.getElementById('moon');
+  var lcloud = document.getElementById('lcloud');
+  var rcloud = document.getElementById('rcloud');
   var leadup = document.getElementById('lead-up');
   var leaddown = document.getElementById('lead-down');
 
   if (window.scrollY > 100) {
     logo.classList.add('hide');
+    lcloud.classList.add('hide');
+    rcloud.classList.add('hide');
+    moon.classList.add('rotate');
     leadup.style.opacity = 1;
     leaddown.style.opacity = 0;
   } else {
     logo.classList.remove('hide');
+    lcloud.classList.remove('hide');
+    rcloud.classList.remove('hide');
+    moon.classList.remove('rotate');
     leadup.style.opacity = 0;
     leaddown.style.opacity = 1;
   }
@@ -53,8 +62,9 @@ const Home = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
-              <div className="corner moon preload"></div>
-              <div className="corner cloud-left preload"></div>
+              <div className="corner moon preload" id="moon"></div>
+              <div className="corner cloud-left preload" id="lcloud"></div>
+              <div className="corner cloud-right preload" id="rcloud"></div>
               <div>
                 <Col md={12} className="home-header" >
                   <Image className="home-bg" id="bg-logo" src={bglogo} alt="home-bg" />
