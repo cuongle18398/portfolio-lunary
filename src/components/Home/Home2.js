@@ -16,7 +16,7 @@ const scrollHandler = () => {
   var imga = document.getElementById('img-a');
   var imgb = document.getElementById('img-b');
 
-  if (window.scrollY > 100 && window.scrollY < 1200) {
+  if (window.scrollY > 100) {
     text.classList.remove('left-hide');
     imga.classList.remove('right-hide');
   } else {
@@ -24,7 +24,7 @@ const scrollHandler = () => {
     imga.classList.add('right-hide');
   }
 
-  if (window.scrollY > 1100) {
+  if (window.scrollY > 1000) {
     text2.classList.remove('right-hide');
     imgb.classList.remove('left-hide');
   } else {
@@ -41,7 +41,6 @@ function Home2() {
       <Container>
         <Row>
           <Col md={7} className="home-about-description" id="about-text">
-            <br />
             <br />
             <br />
             <br />
@@ -73,7 +72,6 @@ function Home2() {
           <Col md={7} className="home-about-description" id="about-text2">
             <br />
             <br />
-            <br />
             <h1 className="font-thin home-about-title">
               <img src={sao4} alt="sao4" /> WHAT <span className="purple"> I DO </span> ?
             </h1>
@@ -81,7 +79,7 @@ function Home2() {
             <h2 className="home-do">Digital <b className="purple">Post</b></h2>
             <h2 className="home-do"><b className="purple">Layout</b> Design</h2>
             <h2 className="home-do"><b className="purple">Brandings</b> Design</h2>
-            <h2 className="home-do"><b className="purple">Illustrations</b></h2>
+            <h2 className="home-do"><b className="purple">Illus</b>trations</h2>
             <Button className="home-button">CHECK MY PROJECTS</Button>
           </Col>
         </Row>

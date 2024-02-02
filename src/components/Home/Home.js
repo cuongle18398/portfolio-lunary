@@ -7,10 +7,9 @@ import { CiCircleChevDown, CiCircleChevUp } from "react-icons/ci";
 import bglogo from "../../Assets/Background/mylogo.png"
 
 
-
 const scrollHandler = () => {
   var logo = document.getElementById('bg-logo');
-  var moon = document.getElementById('moon');
+  var bgimg = document.getElementById('bg-img');
   var lcloud = document.getElementById('lcloud');
   var rcloud = document.getElementById('rcloud');
   var leadup = document.getElementById('lead-up');
@@ -18,16 +17,16 @@ const scrollHandler = () => {
 
   if (window.scrollY > 100) {
     logo.classList.add('hide');
+    bgimg.classList.add('hide');
     lcloud.classList.add('hide');
     rcloud.classList.add('hide');
-    moon.classList.add('rotate');
     leadup.style.opacity = 1;
     leaddown.style.opacity = 0;
   } else {
     logo.classList.remove('hide');
+    bgimg.classList.remove('hide');
     lcloud.classList.remove('hide');
     rcloud.classList.remove('hide');
-    moon.classList.remove('rotate');
     leadup.style.opacity = 0;
     leaddown.style.opacity = 1;
   }
@@ -61,19 +60,20 @@ const Home = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
-              <div className="corner moon preload" id="moon"></div>
+              <div className="bg-img" id="bg-img">
+                <div className="moon" id="moon"></div>
+                <div className="myimg" id="myimg"></div>
+              </div>
               <div className="corner cloud-left preload" id="lcloud"></div>
               <div className="corner cloud-right preload" id="rcloud"></div>
-              <div>
-                <Col md={12} className="home-header" >
-                  <Image className="home-bg" id="bg-logo" src={bglogo} alt="home-bg" />
-
-                </Col>
-                <div id="lead-down" className="bounce">
-                  <span class="icon-container" onClick={() => scrollDown()}>
-                    <CiCircleChevDown style={iconstyle} />
-                  </span>
-                </div>
+              <Col className="home-container home-header" >
+                <h1 className="home-title">Hello</h1>
+                <h1 className="home-title behind">I am</h1>
+              </Col>
+              <div id="lead-down" className="bounce">
+                <span class="icon-container" onClick={() => scrollDown()}>
+                  <CiCircleChevDown style={iconstyle} />
+                </span>
               </div>
               <div id="lead-up" className="bounce">
                 <span class="icon-container" onClick={() => scrollUp()}>
