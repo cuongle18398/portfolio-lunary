@@ -344,19 +344,27 @@ button:focus {
   color: white !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
-  text-align: center;
+  text-align: left !important;
   opacity: 1;
   transition: opacity 0.7s ease-in, transform 1s;
   position: static;
-  &.hide {
+  &.left-hide {
     opacity: 0;
     transform: translate(-30px, 0px); /* Điều chỉnh vị trí xuất phát của phần tử */
+  }
+  &.right-hide {
+    opacity: 0;
+    transform: translate(30px, 0px); /* Điều chỉnh vị trí xuất phát của phần tử */
+  }
+  .home-button{
+    border-radius: 25px;
+    padding: 10px !important;
   }
 }
 
 .home-about-body {
   padding-top: 50px;
-  font-size: 1.2em !important;
+  font-size: 2.2em !important;
   text-align: left;
 }
 

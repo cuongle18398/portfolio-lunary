@@ -1,9 +1,8 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Col, Image } from "react-bootstrap";
 import { motion, AnimatePresence } from "framer-motion";
 import Particle from "../Particle";
 import Home2 from "./Home2";
-import Type from "./Type";
 import { CiCircleChevDown, CiCircleChevUp } from "react-icons/ci";
 import bglogo from "../../Assets/Background/mylogo.png"
 

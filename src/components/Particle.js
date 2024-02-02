@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from 'react';
 import Particles from "react-tsparticles";
 
-function Particle() {
+const Particle = () => {
   return (
     <Particles
       id="tsparticles"
