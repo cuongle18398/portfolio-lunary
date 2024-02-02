@@ -252,10 +252,19 @@ button:focus {
   height: 100vh;
 }
 
+.home-container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+  height: 100vh;
+}
+
 .home-header {
   opacity: 1;
   text-align: center;
-  padding-top: 8vh;
   z-index: 11;
   transition: opacity 0.5s;//, transform 0.5s;
   img {
@@ -273,7 +282,27 @@ button:focus {
     opacity: 0;
     //transform: translate(-30rem, -10rem); /* Điều chỉnh vị trí xuất phát của phần tử */
   }
+  .home-title {
+    position: relative !important;
+    color: #D6EEF0;
+    font-size: 6rem;
+    font-weight: 400;
+    text-align: left !important;
+    margin: 0;
+    z-index: 1;
+
+    &.title {
+      font-size: 9rem;
+      font-weight: bolder;
+    }
+
+    &.behind{
+      z-index: -99 !important;
+    }
+  }
 }
+
+
 
 
 .home-section {
@@ -287,7 +316,7 @@ button:focus {
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 2rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
 }
@@ -306,24 +335,28 @@ button:focus {
   color: var(--imp-text-color);
 }
 
+.Typewriter {
+  text-align: right !important;
+}
+
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
-  color: var(--imp-text-color) !important;
-  font-weight: 600 !important;
+  position: relative;
+  font-size: 1.5em !important;
+  color: #D2FAFB !important;
+  font-weight: 200 !important;
+  z-index: 1;
 }
 .Typewriter__cursor {
-  font-size: 2.4em !important;
-  color: var(--imp-text-color) !important;
+  font-size: 1,5em !important;
+  color: #D2FAFB !important;
 }
 
 @media (max-width: 767px) {
-  .Typewriter__wrapper {
-    font-size: 1.4em !important;
-    font-weight: 500 !important;
-    position: absolute !important;
+  .Typewriter {
+    display: none;
   }
-  .Typewriter__cursor {
-    display: none !important;
+  .title{
+    font-size: 8rem !important;
   }
 }
 
@@ -345,6 +378,9 @@ button:focus {
   .myAvtar {
     padding-top: 2em !important;
     padding-bottom: 2em !important;
+  }
+  .home-header .home-title.behind {
+    z-index: 1 !important;
   }
 }
 
@@ -477,31 +513,10 @@ button:focus {
   right: 0;
   opacity: 1;
   z-index: 0;
-  height: 85%;
+  height: 80%;
   width: 100%;
 }
 
-.home-container {
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.home-header{
-  margin-top: 12rem;
-  .home-title {
-    position: relative !important;
-    color: #D6EEF0;
-    font-size: 5.5rem;
-    font-weight: 400;
-    text-align: left !important;
-    padding: 0px 15px 10px;
-    z-index: 1;
-    &.behind{
-      z-index: -99 !important;
-    }
-  }
-}
 
 .cloud-left{
   z-index: -1;

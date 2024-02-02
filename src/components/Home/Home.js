@@ -4,8 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import { CiCircleChevDown, CiCircleChevUp } from "react-icons/ci";
-import bglogo from "../../Assets/Background/mylogo.png"
-
+import Type from "./Type";
 
 const scrollHandler = () => {
   var logo = document.getElementById('bg-logo');
@@ -67,8 +66,13 @@ const Home = () => {
               <div className="corner cloud-left preload" id="lcloud"></div>
               <div className="corner cloud-right preload" id="rcloud"></div>
               <Col className="home-container home-header" >
-                <h1 className="home-title">Hello</h1>
-                <h1 className="home-title behind">I am</h1>
+                <div>
+                  <br />
+                  <h1 className="home-title">Hello</h1>
+                  <h1 className="home-title behind">I am</h1>
+                  <h1 className="home-title title"><span className="purple">THO</span> PHAM</h1>
+                  <Type />
+                </div>
               </Col>
               <div id="lead-down" className="bounce">
                 <span class="icon-container" onClick={() => scrollDown()}>
