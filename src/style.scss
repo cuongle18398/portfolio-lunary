@@ -302,9 +302,6 @@ button:focus {
   }
 }
 
-
-
-
 .home-section {
   position: relative;
   z-index: -1;
@@ -408,6 +405,7 @@ button:focus {
   }
   .home-button{
     border-radius: 25px;
+    margin-top: 12px;
     padding: 10px !important;
   }
   .home-about-title{
@@ -421,8 +419,9 @@ button:focus {
 
 .home-about-body {
   padding-top: 20px;
-  font-size: 2.4em !important;
+  font-size: 2em !important;
   text-align: left;
+  margin-bottom: 0px !important;
 }
 
 .home-about-social {
