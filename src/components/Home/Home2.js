@@ -2,13 +2,12 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import myImg from "../../Assets/Cover/Ava.png";
 import Wtd from "../../Assets/Background/wtd.png";
-import Tilt from "react-parallax-tilt";
 import {
   AiFillBehanceCircle,
 } from "react-icons/ai";
 import { FaFacebook, FaGooglePlus } from "react-icons/fa";
 import sao4 from "../../Assets/Background/sao4canh.svg"
-
+import { Link } from "react-router-dom";
 
 const scrollHandler = () => {
   var text = document.getElementById('about-text');
@@ -16,7 +15,7 @@ const scrollHandler = () => {
   var imga = document.getElementById('img-a');
   var imgb = document.getElementById('img-b');
 
-  if (window.scrollY > 100) {
+  if (window.scrollY > 300) {
     text.classList.remove('left-hide');
     imga.classList.remove('right-hide');
   } else {
@@ -40,7 +39,7 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={7} className="home-about-description" id="about-text">
+          <Col md={6} className="home-about-description" id="about-text">
             <br />
             <br />
             <br />
@@ -49,27 +48,24 @@ function Home2() {
             </h1>
             <p className="home-about-body">
               I’m a <b className="purple">passionate </b> & <b className="purple">creative</b> designer
-              with strong focus on creating
-              both visually <b className="purple">stunning &nbsp;designs</b>.
+              with strong focus on creating both visually <b className="purple">stunning designs</b>.
               <br />
             </p>
             <br />
-            <Button className="home-button">CONTACT WITH ME</Button>
+            <Link to='/resume'>
+              <Button className="home-button">CONTACT WITH ME</Button>
+            </Link>
           </Col>
-          <Col md={5} className="myAvtar" id="img-a">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
+          <Col md={6} className="myAvtar" id="img-a">
+            <img src={myImg} className="img-fluid" alt="avatar" />
           </Col>
         </Row>
 
         <Row>
-          <Col md={5} className="myAvtar" id="img-b">
-            <Tilt>
-              <img src={Wtd} className="img-fluid" alt="avatar" />
-            </Tilt>
+          <Col md={6} className="myAvtar" id="img-b">
+            <img src={Wtd} className="img-fluid" alt="avatar" />
           </Col>
-          <Col md={7} className="home-about-description" id="about-text2">
+          <Col md={6} className="home-about-description" id="about-text2">
             <br />
             <br />
             <h1 className="font-thin home-about-title">
@@ -80,7 +76,9 @@ function Home2() {
             <h2 className="home-do"><b className="purple">Layout</b> Design</h2>
             <h2 className="home-do"><b className="purple">Brandings</b> Design</h2>
             <h2 className="home-do"><b className="purple">Illus</b>trations</h2>
-            <Button className="home-button">CHECK MY PROJECTS</Button>
+            <Link to='/project'>
+              <Button className="home-button">CHECK MY PROJECTS</Button>
+            </Link>
           </Col>
         </Row>
         <Row>
@@ -126,7 +124,7 @@ function Home2() {
           </Col>
         </Row>
       </Container>
-    </Container>
+    </Container >
   );
 }
 export default Home2;

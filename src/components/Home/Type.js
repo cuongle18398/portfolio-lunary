@@ -9,6 +9,7 @@ function Type() {
           strings: [
             "Sometimes i am a dreamer.....",
           ],
+          wrapperClassName: "font-light",
           autoStart: true,
           loop: true,
           deleteSpeed: 50,

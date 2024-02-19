@@ -7,6 +7,10 @@
   font-family: 'Roboto-thin';
   src: url('../src/Assets//Font/ROBOTO-THIN.TTF') format('truetype');
 }
+@font-face {
+  font-family: 'Roboto-light';
+  src: url('../src/Assets//Font/ROBOTO-LIGHT.TTF') format('truetype');
+}
 body {
   margin: 0;
   font-family: "Roboto", serif !important;
@@ -18,4 +22,8 @@ body {
 .font-thin {
   font-family: "Roboto-thin", serif !important;
   font-weight: bold;
+}
+
+.font-light {
+  font-family: "Roboto-light", serif !important;
 }

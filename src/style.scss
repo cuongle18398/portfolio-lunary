@@ -260,6 +260,10 @@ button:focus {
   justify-content: center; /* Căn giữa nội dung theo chiều ngang */
   align-items: center; /* Căn giữa nội dung theo chiều dọc */
   height: 100vh;
+  transition: all 0.5s ease-in-out;
+  &.hide {
+    opacity: 0;
+  }
 }
 
 .home-header {
@@ -333,14 +337,19 @@ button:focus {
 }
 
 .Typewriter {
-  text-align: right !important;
+  text-align: left !important;
+  letter-spacing: 0.2rem;
+  font-weight: 100 !important;
+  position: absolute;
+  right: 20%;
+  z-index: 999 !important;
 }
 
 .Typewriter__wrapper {
   position: relative;
-  font-size: 1.5em !important;
+  font-size: 2.5em !important;
   color: #D2FAFB !important;
-  font-weight: 200 !important;
+  font-weight: lighter !important;
   z-index: 1;
 }
 .Typewriter__cursor {
@@ -362,7 +371,7 @@ button:focus {
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 9em !important;
+  padding-top: 4em !important;
   transition: all 0.5s ease-in-out;
   &.left-hide {
     opacity: 0;
@@ -409,11 +418,14 @@ button:focus {
   .home-button{
     border-radius: 25px;
     margin-top: 12px;
-    padding: 10px !important;
+    padding: 10px 15px !important;
   }
   .home-about-title{
     font-size: 2em;
     letter-spacing: .2rem;
+    p {
+      letter-spacing: .5rem;
+    }
   }
   .home-do{
     padding: 10px 0px;
@@ -422,7 +434,7 @@ button:focus {
 
 .home-about-body {
   padding-top: 20px;
-  font-size: 2em !important;
+  font-size: 2.2em !important;
   text-align: left;
   margin-bottom: 0px !important;
 }

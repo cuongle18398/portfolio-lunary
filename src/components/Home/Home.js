@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Col, Image } from "react-bootstrap";
+import { Container, Col } from "react-bootstrap";
 import { motion, AnimatePresence } from "framer-motion";
 import Particle from "../Particle";
 import Home2 from "./Home2";
@@ -7,25 +7,19 @@ import { CiCircleChevDown, CiCircleChevUp } from "react-icons/ci";
 import Type from "./Type";
 
 const scrollHandler = () => {
-  var logo = document.getElementById('bg-logo');
-  var bgimg = document.getElementById('bg-img');
-  var lcloud = document.getElementById('lcloud');
-  var rcloud = document.getElementById('rcloud');
+  var bimg = document.getElementById('bg-img');
+  var bg = document.getElementById('bg');
   var leadup = document.getElementById('lead-up');
   var leaddown = document.getElementById('lead-down');
 
-  if (window.scrollY > 100) {
-    logo.classList.add('hide');
-    bgimg.classList.add('hide');
-    lcloud.classList.add('hide');
-    rcloud.classList.add('hide');
+  if (window.scrollY > 300) {
+    bimg.classList.add('hide');
+    bg.classList.add('hide');
     leadup.style.opacity = 1;
     leaddown.style.opacity = 0;
   } else {
-    logo.classList.remove('hide');
-    bgimg.classList.remove('hide');
-    lcloud.classList.remove('hide');
-    rcloud.classList.remove('hide');
+    bimg.classList.remove('hide');
+    bg.classList.remove('hide');
     leadup.style.opacity = 0;
     leaddown.style.opacity = 1;
   }
@@ -60,12 +54,12 @@ const Home = () => {
               exit={{ opacity: 0 }}
             >
               <div className="bg-img" id="bg-img">
-                <div className="moon" id="moon"></div>
-                <div className="myimg" id="myimg"></div>
+                <div className="moon"></div>
+                <div className="myimg"></div>
               </div>
               <div className="corner cloud-left preload" id="lcloud"></div>
               <div className="corner cloud-right preload" id="rcloud"></div>
-              <Col className="home-container home-header" >
+              <Col className="home-container home-header" id="bg">
                 <div>
                   <br />
                   <h1 className="home-title">Hello</h1>
