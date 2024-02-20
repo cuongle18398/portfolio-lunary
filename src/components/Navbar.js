@@ -16,6 +16,13 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   function scrollHandler() {
 
     if (window.scrollY > 100) {
@@ -51,19 +58,21 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to="/home" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
+                as="a"
+                onClick={() => {
+                  scrollToSection("about");
+                  updateExpanded(false);
+                }}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
+              </Nav.Link>;
             </Nav.Item>
 
             <Nav.Item>

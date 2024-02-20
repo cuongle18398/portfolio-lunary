@@ -8,6 +8,7 @@ import {
 import { FaFacebook, FaGooglePlus } from "react-icons/fa";
 import sao4 from "../../Assets/Background/sao4canh.svg"
 import { Link } from "react-router-dom";
+import Client from "./Client";
 
 const scrollHandler = () => {
   var text = document.getElementById('about-text');
@@ -84,6 +85,13 @@ function Home2() {
         <Row>
           <Col md={12} className="home-about-social">
             <br />
+            <h1>MY CLIENTS</h1>
+            <br />
+            <Client />
+          </Col>
+        </Row>
+        <Row>
+          <Col md={12} className="home-about-social">
             <br />
             <h1>FIND ME ON</h1>
             <p>
