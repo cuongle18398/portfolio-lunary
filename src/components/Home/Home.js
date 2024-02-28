@@ -9,17 +9,23 @@ import Type from "./Type";
 const scrollHandler = () => {
   var bimg = document.getElementById('bg-img');
   var bg = document.getElementById('bg');
+  var lcloud = document.getElementById('lcloud');
+  var rcloud = document.getElementById('rcloud');
   var leadup = document.getElementById('lead-up');
   var leaddown = document.getElementById('lead-down');
 
   if (window.scrollY > 300) {
     bimg.classList.add('hide');
     bg.classList.add('hide');
+    lcloud.classList.add('hide');
+    rcloud.classList.add('hide');
     leadup.style.opacity = 1;
     leaddown.style.opacity = 0;
   } else {
     bimg.classList.remove('hide');
     bg.classList.remove('hide');
+    lcloud.classList.remove('hide');
+    rcloud.classList.remove('hide');
     leadup.style.opacity = 0;
     leaddown.style.opacity = 1;
   }

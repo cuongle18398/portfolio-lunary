@@ -534,29 +534,29 @@ button:focus {
 
 .cloud-left{
   z-index: -1;
-  //background: url(./Assets/Background/may.svg) no-repeat right bottom;
+  background: url(./Assets/Background/Group-21.png) no-repeat right top;
   bottom: 0;
-  left: 0;
-  width: 60% !important;
+  left: -18%;
+  width: 37% !important;
   opacity: 1;
   transition: opacity 0.5s ease-in, transform 0.5s;
   &.hide {
-    opacity: 0.4;
-    transform: translate(-20rem, 0px);
+    opacity: 0.2;
+    transform: translate(-5rem, 0px);
   }
 }
 
 .cloud-right{
   z-index: -1;
-  //background: url(./Assets/Background/may.svg) no-repeat left top;
-  top: 0;
-  right: 0;
-  width: 70% !important;
+  background: url(./Assets/Background/Group-22.png) no-repeat left top;
+  top: 20%;
+  right: -18%;
+  width: 37% !important;
   opacity: 1;
   transition: opacity 0.5s ease-in, transform 0.5s;
   &.hide {
-    opacity: 0.4;
-    transform: translate(10rem, 0px);
+    opacity: 0.2;
+    transform: translate(5rem, 0px);
   }
 }
 
