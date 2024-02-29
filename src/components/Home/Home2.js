@@ -10,6 +10,8 @@ import sao4 from "../../Assets/Background/sao4canh.svg"
 import { Link } from "react-router-dom";
 import Client from "./Client";
 
+
+
 const scrollHandler = () => {
   var text = document.getElementById('about-text');
   var text2 = document.getElementById('about-text2');
@@ -36,6 +38,7 @@ const scrollHandler = () => {
 window.addEventListener("scroll", scrollHandler);
 
 function Home2() {
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -82,18 +85,33 @@ function Home2() {
             </Link>
           </Col>
         </Row>
+
         <Row>
-          <Col md={12} className="home-about-social">
+          <Col md={6} className="home-about-description" id="skill" >
             <br />
-            <h1>MY CLIENTS</h1>
+            <h1 className="font-thin home-about-title">
+              <img src={sao4} alt="sao4" /> MY TOP <span className="purple"> SKILLS </span> ...
+            </h1>
             <br />
-            <Client />
+            <Col md={10} className="offset-md-2">
+              <Client />
+            </Col>
+          </Col>
+          <Col md={6} className="home-about-description" id="client" >
+            <br />
+            <Col md={10}>
+              <Client />
+            </Col>
+            <br />
+            <h1 className="font-thin home-about-title title-right">
+              <img src={sao4} alt="sao4" /> AND MY <span className="purple"> CLIENTS </span>
+            </h1>
           </Col>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
             <br />
-            <h1>FIND ME ON</h1>
+            <h1>CONTACT ME</h1>
             <p>
               Feel free to <span className="purple">connect </span>with me
             </p>

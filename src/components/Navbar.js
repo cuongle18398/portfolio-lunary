@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/Cover/logo-bg.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
@@ -13,15 +13,35 @@ import {
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
+  const navigate = useNavigate();
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [shouldScrollToAbout, setShouldScrollToAbout] = useState(false);
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
+    console.log(section)
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const handleOnAboutClick = () => {
+    if (window.location.pathname !== '/') {
+      setShouldScrollToAbout(true);
+      navigate('/');
+    } else {
+      scrollToSection("about");
+    }
+  };
+
+  useEffect(() => {
+    if (shouldScrollToAbout) {
+      setTimeout(() => scrollToSection("about"), 150);
+      setShouldScrollToAbout(false);
+    }
+  }, [shouldScrollToAbout]);
+
 
   function scrollHandler() {
 
@@ -67,12 +87,12 @@ function NavBar() {
               <Nav.Link
                 as="a"
                 onClick={() => {
-                  scrollToSection("about");
+                  handleOnAboutClick();
                   updateExpanded(false);
                 }}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>;
+              </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>

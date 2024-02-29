@@ -175,7 +175,8 @@ button:focus {
 
 .navbar-nav .nav-item {
   position: relative;
-  margin-left: 20px;
+  margin-left: 2rem;
+  display: flex;
 }
 
 .navbar-nav .nav-item a {
@@ -426,6 +427,9 @@ button:focus {
     p {
       letter-spacing: .5rem;
     }
+    &.title-right {
+      text-align: right;
+    }
   }
   .home-do{
     padding: 10px 0px;
@@ -569,8 +573,8 @@ button:focus {
 
 #lead-up{
   position:fixed;
-  right:5%;
-  bottom: 8%;
+  right:2%;
+  bottom: 4%;
   text-align:right;
   opacity: 0;
 }
@@ -973,24 +977,22 @@ button:focus {
 
 //===Clients====
 .client-icons {
-  font-size: 4.5em !important;
-  margin: 15px !important;
+  margin: 10px 20px !important;
   padding: 10px !important;
-  opacity: 0.93 !important;
+  opacity: 0.9 !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 20px !important;
-  display: table !important;
   background-color: rgba($color: whitesmoke, $alpha: 0.2);
-  box-shadow: 7px -8px 10px 0px rgba(0,0,0,0.4);
-  -webkit-box-shadow: 7px -8px 10px 0px rgba(0,0,0,0.4);
-  -moz-box-shadow: 7px -8px 10px 0px rgba(0,0,0,0.4);
+  box-shadow: 4px -4px 5px 0px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 4px -4px 5px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 4px -4px 5px 0px rgba(0,0,0,0.4);
   backdrop-filter: blur(2px);
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
-
   img {
-    width: 65%;
+    width: 32%;
+    margin: auto;
   }
 }
 
