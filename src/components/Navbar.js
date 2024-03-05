@@ -8,15 +8,14 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineContacts
 } from "react-icons/ai";
-
-import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const navigate = useNavigate();
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
-  const [shouldScrollToAbout, setShouldScrollToAbout] = useState(false);
+  const [SectionToScroll, setSectionToScroll] = useState("");
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -26,21 +25,21 @@ function NavBar() {
     }
   };
 
-  const handleOnAboutClick = () => {
+  const handleOnNavClick = (section) => {
     if (window.location.pathname !== '/') {
-      setShouldScrollToAbout(true);
+      setSectionToScroll(section);
       navigate('/');
     } else {
-      scrollToSection("about");
+      scrollToSection(section);
     }
   };
 
   useEffect(() => {
-    if (shouldScrollToAbout) {
-      setTimeout(() => scrollToSection("about"), 150);
-      setShouldScrollToAbout(false);
+    if (SectionToScroll !== "") {
+      setTimeout(() => scrollToSection(SectionToScroll), 150);
+      setSectionToScroll(false);
     }
-  }, [shouldScrollToAbout]);
+  }, [SectionToScroll]);
 
 
   function scrollHandler() {
@@ -87,7 +86,7 @@ function NavBar() {
               <Nav.Link
                 as="a"
                 onClick={() => {
-                  handleOnAboutClick();
+                  handleOnNavClick("about");
                   updateExpanded(false);
                 }}
               >
@@ -110,34 +109,15 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
+                as="a"
+                onClick={() => {
+                  handleOnNavClick("contact");
+                  updateExpanded(false);
+                }}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <AiOutlineContacts style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
-
-            {/* <Nav.Item>
-              <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item> */}
-
-            {/* <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/soumyajit4419/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

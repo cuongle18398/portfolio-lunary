@@ -177,6 +177,7 @@ button:focus {
   position: relative;
   margin-left: 2rem;
   display: flex;
+  cursor: pointer !important;
 }
 
 .navbar-nav .nav-item a {
@@ -202,6 +203,16 @@ button:focus {
 
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
+}
+
+/*--------Skill Bar---------*/
+.skillbar-title{
+  font-size: 15px;
+}
+
+.skillbar-percent{
+  display: none;
+
 }
 
 /* --------- */
@@ -494,6 +505,11 @@ button:focus {
   box-shadow: 0 0 5px var(--imp-text-color);
   text-shadow: 0 0 2px var(--imp-text-color);
 }
+
+.contact{
+  margin-top: 3rem !important;
+}
+
 .corner {
   background-size: cover !important;
   position: fixed;
@@ -977,12 +993,12 @@ button:focus {
 
 //===Clients====
 .client-icons {
-  margin: 10px 20px !important;
+  margin: 10px !important;
   padding: 10px !important;
   opacity: 0.9 !important;
   vertical-align: middle !important;
   text-align: center !important;
-  border-radius: 20px !important;
+  border-radius: 10px !important;
   background-color: rgba($color: whitesmoke, $alpha: 0.2);
   box-shadow: 4px -4px 5px 0px rgba(0,0,0,0.4);
   -webkit-box-shadow: 4px -4px 5px 0px rgba(0,0,0,0.4);
@@ -991,7 +1007,8 @@ button:focus {
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
   img {
-    width: 32%;
+    width: 85%;
+    height: auto;
     margin: auto;
   }
 }
