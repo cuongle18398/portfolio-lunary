@@ -5,7 +5,6 @@ import Wtd from "../../Assets/Background/wtd.png";
 import sao4 from "../../Assets/Background/sao4canh.svg"
 import { Link } from "react-router-dom";
 import Client from "./Client";
-import Contact from "./Contact";
 import Skill from "./Skills";
 
 const scrollHandler = () => {
@@ -33,10 +32,17 @@ const scrollHandler = () => {
 
 window.addEventListener("scroll", scrollHandler);
 
+const scrollToContact = () => {
+  const section = document.getElementById('contact');
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 function Home2() {
 
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container fluid className="home-about-section alt-section" id="about">
       <Container>
         <Row>
           <Col md={6} className="home-about-description" id="about-text">
@@ -52,9 +58,7 @@ function Home2() {
               <br />
             </p>
             <br />
-            <Link to='/resume'>
-              <Button className="home-button">CONTACT WITH ME</Button>
-            </Link>
+            <Button className="home-button" onClick={() => scrollToContact()}>CONTACT WITH ME</Button>
           </Col>
           <Col md={6} className="myAvtar" id="img-a">
             <img src={myImg} className="img-fluid" alt="avatar" />
@@ -82,7 +86,7 @@ function Home2() {
           </Col>
         </Row>
 
-        <Row>
+        {/* <Row>
           <Col md={6} className="home-about-description" id="skill" >
             <br />
             <h1 className="font-thin home-about-title">
@@ -99,8 +103,8 @@ function Home2() {
             <br />
             <Client />
           </Col>
-        </Row>
-        <Contact />
+        </Row> */}
+        {/* <Contact /> */}
       </Container>
     </Container >
   );

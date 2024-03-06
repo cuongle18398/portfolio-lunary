@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import { CiCircleChevDown, CiCircleChevUp } from "react-icons/ci";
 import Type from "./Type";
+import Contact from "./Contact";
 
 const scrollHandler = () => {
   var bimg = document.getElementById('bg-img');
@@ -70,7 +71,7 @@ const Home = () => {
                   <br />
                   <h1 className="home-title">Hello</h1>
                   <h1 className="home-title behind">I am</h1>
-                  <h1 className="home-title title"><span className="purple">THO</span> PHAM</h1>
+                  <h1 className="home-title title"><span className="purple">L U N A</span> R Y</h1>
                   <Type />
                 </div>
               </Col>
@@ -89,6 +90,7 @@ const Home = () => {
         </Container>
       </Container>
       <Home2 />
+      <Contact />
     </section>
   );
 }
