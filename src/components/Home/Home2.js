@@ -4,19 +4,20 @@ import myImg from "../../Assets/Cover/Ava.png";
 import Wtd from "../../Assets/Background/wtd.png";
 import sao4 from "../../Assets/Background/sao4canh.svg"
 import { Link } from "react-router-dom";
-import Client from "./Client";
-import Skill from "./Skills";
 
 const scrollHandler = () => {
+  var about = document.getElementById('about');
   var text = document.getElementById('about-text');
   var text2 = document.getElementById('about-text2');
   var imga = document.getElementById('img-a');
   var imgb = document.getElementById('img-b');
 
   if (window.scrollY > 300) {
+    about.classList.add('alt-section')
     text.classList.remove('left-hide');
     imga.classList.remove('right-hide');
   } else {
+    about.classList.remove('alt-section')
     text.classList.add('left-hide');
     imga.classList.add('right-hide');
   }
@@ -42,7 +43,7 @@ const scrollToContact = () => {
 function Home2() {
 
   return (
-    <Container fluid className="home-about-section alt-section" id="about">
+    <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={6} className="home-about-description" id="about-text">

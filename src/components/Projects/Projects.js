@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { motion, AnimatePresence } from "framer-motion";
 import Slider from "react-slick";
 import ProjectCard from "./ProjectCards";
@@ -12,15 +12,6 @@ import package_ from "../../Assets/Projects/Project-Bg/package.png";
 import stationery from "../../Assets/Projects/Project-Bg/stationery.png";
 
 function Projects() {
-  const settings = {
-    infinite: true,
-    speed: 500,
-    autoplaySpeed: 3000,
-    autoplay: true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    initialSlide: 0
-  };
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -38,40 +29,50 @@ function Projects() {
               Here are a few projects I've worked on recently.
             </p>
             <br />
-            <br />
-            <Slider {...settings}>
-              <ProjectCard
-                imgPath={socialpost}
-                title="SOCIAL POST"
-                Link='/socialposts'
-              />
-              <ProjectCard
-                imgPath={illu}
-                title="ILLUSTRATION"
-                Link='/illustration'
-              />
-              <ProjectCard
-                imgPath={layout}
-                title="LAYOUT"
-                Link='/layout'
-              />
-              <ProjectCard
-                imgPath={logo}
-                title="LOGO"
-                Link='/logo'
-              />
-              <ProjectCard
-                imgPath={package_}
-                title="PACKAGE"
-                Link='/package'
-              />
-              <ProjectCard
-                imgPath={stationery}
-                title="STATIONERY"
-                Link='/stationery'
-              />
-            </Slider>
-            <br />
+            <Row>
+              <Col md={6} className="project-container">
+                <ProjectCard
+                  imgPath={socialpost}
+                  title="SOCIAL POST"
+                  Link='/socialposts'
+                />
+              </Col>
+              <Col md={6} className="project-container">
+                <ProjectCard
+                  imgPath={illu}
+                  title="ILLUSTRATION"
+                  Link='/illustration'
+                />
+              </Col>
+              <Col md={6} className="project-container">
+                <ProjectCard
+                  imgPath={layout}
+                  title="LAYOUT"
+                  Link='/layout'
+                />
+              </Col>
+              <Col md={6} className="project-container">
+                <ProjectCard
+                  imgPath={logo}
+                  title="LOGO"
+                  Link='/logo'
+                />
+              </Col>
+              <Col md={6} className="project-container">
+                <ProjectCard
+                  imgPath={package_}
+                  title="PACKAGE"
+                  Link='/package'
+                />
+              </Col>
+              <Col md={6} className="project-container">
+                <ProjectCard
+                  imgPath={stationery}
+                  title="STATIONERY"
+                  Link='/stationery'
+                />
+              </Col>
+            </Row>
             <br />
             <br />
           </motion.div>

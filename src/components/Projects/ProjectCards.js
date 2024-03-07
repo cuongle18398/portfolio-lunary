@@ -7,23 +7,24 @@ import { Link } from "react-router-dom";
 function ProjectCards(props) {
 
   return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text>
-        <Link to={props.Link}>
-          <Button variant="primary">
-            <CgWebsite /> &nbsp;
-            Read More
-          </Button>
-        </Link>
-        {"\n"}
-        {"\n"}
-      </Card.Body>
-    </Card>
+    <Card className="project-card-view" style={{
+      backgroundImage: `url("${props.imgPath}")`,
+    }}>
+      <div className="cards-content">
+        <Card.Header>{props.title}</Card.Header>
+        <Card.Body>
+          <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+        </Card.Body>
+        <Card.Footer>
+          <Link to={props.Link}>
+            <Button variant="primary">
+              <CgWebsite /> &nbsp;
+              Read More
+            </Button>
+          </Link>
+        </Card.Footer>
+      </div>
+    </Card >
   );
 }
 export default ProjectCards;
