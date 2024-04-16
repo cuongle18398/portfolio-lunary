@@ -14,7 +14,7 @@ function Projects() {
     <Container fluid className="project-section" id="project">
       <Container>
         <h1 className="project-heading">
-          MY RECENT <strong className="purple">WORKLS </strong>
+          MY RECENT <strong className="purple">WORKS </strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
