@@ -6,6 +6,7 @@ import Home2 from "./Home2";
 import { CiCircleChevDown, CiCircleChevUp } from "react-icons/ci";
 import Type from "./Type";
 import Contact from "./Contact";
+import Projects from '../Projects/Projects'
 
 const scrollHandler = () => {
   var bimg = document.getElementById('bg-img');
@@ -90,6 +91,7 @@ const Home = () => {
         </Container>
       </Container>
       <Home2 />
+      <Projects />
       <Contact />
     </section>
   );

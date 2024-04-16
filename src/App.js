@@ -39,7 +39,7 @@ function App() {
               <ScrollToTop />
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/project" element={<Projects />} />
+                {/* <Route path="/project" element={<Projects />} /> */}
                 <Route path="/socialposts" element={<ProjectCategory title="SOCIAL POSTS" />} />
                 <Route path="/illustration" element={<ProjectCategory title="ILLUSTRATION" />} />
                 <Route path="/layout" element={<ProjectCategory title="LAYOUT" />} />

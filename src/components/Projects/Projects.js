@@ -13,72 +13,62 @@ import stationery from "../../Assets/Projects/Project-Bg/stationery.png";
 
 function Projects() {
   return (
-    <Container fluid className="project-section">
-      <Particle />
+
+    <Container fluid className="project-section" id="project">
       <Container>
-        <AnimatePresence>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <h1 className="project-heading">
-              My Recent <strong className="purple">Works </strong>
-            </h1>
-            <p style={{ color: "white" }}>
-              Here are a few projects I've worked on recently.
-            </p>
-            <br />
-            <Row>
-              <Col md={6} className="project-container">
-                <ProjectCard
-                  imgPath={socialpost}
-                  title="SOCIAL POST"
-                  Link='/socialposts'
-                />
-              </Col>
-              <Col md={6} className="project-container">
-                <ProjectCard
-                  imgPath={illu}
-                  title="ILLUSTRATION"
-                  Link='/illustration'
-                />
-              </Col>
-              <Col md={6} className="project-container">
-                <ProjectCard
-                  imgPath={layout}
-                  title="LAYOUT"
-                  Link='/layout'
-                />
-              </Col>
-              <Col md={6} className="project-container">
-                <ProjectCard
-                  imgPath={logo}
-                  title="LOGO"
-                  Link='/logo'
-                />
-              </Col>
-              <Col md={6} className="project-container">
-                <ProjectCard
-                  imgPath={package_}
-                  title="PACKAGE"
-                  Link='/package'
-                />
-              </Col>
-              <Col md={6} className="project-container">
-                <ProjectCard
-                  imgPath={stationery}
-                  title="STATIONERY"
-                  Link='/stationery'
-                />
-              </Col>
-            </Row>
-            <br />
-            <br />
-          </motion.div>
-        </AnimatePresence>
+        <h1 className="project-heading">
+          MY RECENT <strong className="purple">WORKLS </strong>
+        </h1>
+        <p style={{ color: "white" }}>
+          Here are a few projects I've worked on recently.
+        </p>
+        <br />
+        <Row>
+          <Col md={6} className="project-container">
+            <ProjectCard
+              imgPath={socialpost}
+              title="SOCIAL POST"
+              Link='/socialposts'
+            />
+          </Col>
+          <Col md={6} className="project-container">
+            <ProjectCard
+              imgPath={illu}
+              title="ILLUSTRATION"
+              Link='/illustration'
+            />
+          </Col>
+          <Col md={6} className="project-container">
+            <ProjectCard
+              imgPath={layout}
+              title="LAYOUT"
+              Link='/layout'
+            />
+          </Col>
+          <Col md={6} className="project-container">
+            <ProjectCard
+              imgPath={logo}
+              title="LOGO"
+              Link='/logo'
+            />
+          </Col>
+          <Col md={6} className="project-container">
+            <ProjectCard
+              imgPath={package_}
+              title="PACKAGE"
+              Link='/package'
+            />
+          </Col>
+          <Col md={6} className="project-container">
+            <ProjectCard
+              imgPath={stationery}
+              title="STATIONERY"
+              Link='/stationery'
+            />
+          </Col>
+        </Row>
       </Container>
-    </Container >
+    </Container>
   );
 }
 
