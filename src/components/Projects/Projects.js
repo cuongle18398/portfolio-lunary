@@ -1,9 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { motion, AnimatePresence } from "framer-motion";
-import Slider from "react-slick";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
 import socialpost from "../../Assets/Projects/Project-Bg/social-post.png";
 import illu from "../../Assets/Projects/Project-Bg/illu.png";
 import layout from "../../Assets/Projects/Project-Bg/layout.png";
