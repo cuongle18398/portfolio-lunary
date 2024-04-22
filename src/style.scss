@@ -1073,7 +1073,7 @@ button:focus {
 //====Project Detail====//
 .project-detail-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 50px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
@@ -1087,10 +1087,11 @@ button:focus {
   backdrop-filter: blur(1px);
   border-radius: 20px;
   margin: 20px;
-
+  padding: 10px 5px;
 }
 .project-item img {
-
+  padding: 15px 0px;
+  margin: auto;
   transition: all 0.5s ease 0s !important;
   &:hover {
     transform: scale(1.02) !important;

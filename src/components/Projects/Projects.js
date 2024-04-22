@@ -4,9 +4,6 @@ import ProjectCard from "./ProjectCards";
 import socialpost from "../../Assets/Projects/Project-Bg/social-post.png";
 import illu from "../../Assets/Projects/Project-Bg/illu.png";
 import layout from "../../Assets/Projects/Project-Bg/layout.png";
-import logo from "../../Assets/Projects/Project-Bg/logo.png";
-import package_ from "../../Assets/Projects/Project-Bg/package.png";
-import stationery from "../../Assets/Projects/Project-Bg/stationery.png";
 
 function Projects() {
   return (
@@ -24,43 +21,29 @@ function Projects() {
           <Col md={6} className="project-container">
             <ProjectCard
               imgPath={socialpost}
-              title="SOCIAL POST"
+              title="Social Post"
               Link='/socialposts'
             />
           </Col>
           <Col md={6} className="project-container">
             <ProjectCard
               imgPath={illu}
-              title="ILLUSTRATION"
+              title="Event"
+              Link='/event'
+            />
+          </Col>
+          <Col md={6} className="project-container">
+            <ProjectCard
+              imgPath={illu}
+              title="Illustration"
               Link='/illustration'
             />
           </Col>
           <Col md={6} className="project-container">
             <ProjectCard
               imgPath={layout}
-              title="LAYOUT"
-              Link='/layout'
-            />
-          </Col>
-          <Col md={6} className="project-container">
-            <ProjectCard
-              imgPath={logo}
-              title="LOGO"
-              Link='/logo'
-            />
-          </Col>
-          <Col md={6} className="project-container">
-            <ProjectCard
-              imgPath={package_}
-              title="PACKAGE"
-              Link='/package'
-            />
-          </Col>
-          <Col md={6} className="project-container">
-            <ProjectCard
-              imgPath={stationery}
-              title="STATIONERY"
-              Link='/stationery'
+              title="Branding"
+              Link='/branding'
             />
           </Col>
         </Row>

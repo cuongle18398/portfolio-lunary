@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import Particle from "../Particle";
 import { motion, AnimatePresence } from "framer-motion";
-import Projects from "./Projects";
 
 function importAll(r) {
     return r.keys().map(r);
@@ -10,7 +9,8 @@ function importAll(r) {
 
 const ProjectCategory = (props) => {
 
-    const imageList = importAll(require.context("../../Assets/ProjectDetails/Logo", false, /\.(png|jpe?g|svg)$/));
+    const imageList = importAll(require.context('../../Assets/ProjectDetails/', false, /\.(png|jpe?g|svg|gif)$/));
+    const section = props.section;
 
     return (
         <Container fluid className="project-detail-section">
@@ -28,13 +28,17 @@ const ProjectCategory = (props) => {
                         <br />
                         <br />
                         <div className="project-list">
-                            <Row className="project-content">
-                                {imageList.map((image, index) => (
-                                    <Col key={index} sm={12} md={12} lg={12} className="project-item">
-                                        <img src={image} className="img-fluid" alt={`Gallery img ${index}`} />
-                                    </Col>
-                                ))}
-                            </Row>
+                            {section.map((item, index) => (
+                                <Row className="project-content">
+                                    {imageList.map((image, index) => (
+                                        image.includes(props.imgFilter) && image.includes(item) ? (
+                                            <Col key={index} sm={12} md={12} lg={6} className="project-item">
+                                                <img src={image} className="img-fluid" alt={`Project_img_${index}`} />
+                                            </Col>
+                                        ) : null
+                                    ))}
+                                </Row>
+                            ))}
                         </div>
                     </motion.div>
                 </AnimatePresence>

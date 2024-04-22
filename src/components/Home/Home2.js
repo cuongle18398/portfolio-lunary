@@ -33,8 +33,8 @@ const scrollHandler = () => {
 
 window.addEventListener("scroll", scrollHandler);
 
-const scrollToContact = () => {
-  const section = document.getElementById('contact');
+const scrollToSection = (sectionID) => {
+  const section = document.getElementById(sectionID);
   if (section) {
     section.scrollIntoView({ behavior: 'smooth' });
   }
@@ -59,7 +59,7 @@ function Home2() {
               <br />
             </p>
             <br />
-            <Button className="home-button" onClick={() => scrollToContact()}>CONTACT WITH ME</Button>
+            <Button className="home-button" onClick={() => scrollToSection('contact')}>CONTACT WITH ME</Button>
           </Col>
           <Col md={6} className="myAvtar" id="img-a">
             <img src={myImg} className="img-fluid" alt="avatar" />
@@ -81,31 +81,9 @@ function Home2() {
             <h2 className="home-do"><b className="purple">Layout</b> Design</h2>
             <h2 className="home-do"><b className="purple">Brandings</b> Design</h2>
             <h2 className="home-do"><b className="purple">Illus</b>trations</h2>
-            <Link to='/project'>
-              <Button className="home-button">CHECK MY PROJECTS</Button>
-            </Link>
+            <Button className="home-button" onClick={() => scrollToSection('project')}>CHECK MY PROJECTS</Button>
           </Col>
         </Row>
-
-        {/* <Row>
-          <Col md={6} className="home-about-description" id="skill" >
-            <br />
-            <h1 className="font-thin home-about-title">
-              <img src={sao4} alt="sao4" /> MY TOP <span className="purple"> SKILLS </span>
-            </h1>
-            <br />
-            <Skill />
-          </Col>
-          <Col md={6} className="home-about-description" id="client" >
-            <br />
-            <h1 className="font-thin home-about-title title-right">
-              <img src={sao4} alt="sao4" /> AND MY <span className="purple"> CLIENTS </span>
-            </h1>
-            <br />
-            <Client />
-          </Col>
-        </Row> */}
-        {/* <Contact /> */}
       </Container>
     </Container >
   );

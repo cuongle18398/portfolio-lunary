@@ -39,13 +39,36 @@ function App() {
               <ScrollToTop />
               <Routes>
                 <Route path="/" element={<Home />} />
-                {/* <Route path="/project" element={<Projects />} /> */}
-                <Route path="/socialposts" element={<ProjectCategory title="SOCIAL POSTS" />} />
-                <Route path="/illustration" element={<ProjectCategory title="ILLUSTRATION" />} />
-                <Route path="/layout" element={<ProjectCategory title="LAYOUT" />} />
-                <Route path="/logo" element={<ProjectCategory title="LOGO" />} />
-                <Route path="/package" element={<ProjectCategory title="PACKAGE" />} />
-                <Route path="/stationery" element={<ProjectCategory title="STATIONERY" />} />
+                <Route path="/socialposts"
+                  element={
+                    <ProjectCategory
+                      title="MY SOCIAL POSTS"
+                      imgFilter="SocialPost"
+                      section={['Honda', 'Koca', 'Panasonic', 'PNJ', 'SE', 'TripBooking']}
+                    />}
+                />
+                <Route path="/illustration"
+                  element={
+                    <ProjectCategory
+                      title="MY ILLUSTRATION"
+                      imgFilter="Illustration"
+                      section={['Avatar', 'Character', 'Template']}
+                    />}
+                />
+                <Route path="/event"
+                  element={
+                    <ProjectCategory
+                      title="MY EVENT"
+                      imgFilter="Event"
+                    />}
+                />
+                <Route path="/branding"
+                  element={
+                    <ProjectCategory
+                      title="MY BRANDING"
+                      imgFilter="Branding"
+                    />}
+                />
                 <Route path="*" element={<Navigate to="/" />} />
               </Routes>
               <Footer />
