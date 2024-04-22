@@ -3,7 +3,6 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import myImg from "../../Assets/Cover/Ava.png";
 import Wtd from "../../Assets/Background/wtd.png";
 import sao4 from "../../Assets/Background/sao4canh.svg"
-import { Link } from "react-router-dom";
 
 const scrollHandler = () => {
   var about = document.getElementById('about');
