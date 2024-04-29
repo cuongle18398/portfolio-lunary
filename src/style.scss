@@ -1034,6 +1034,20 @@ button:focus {
   transform: scale(1.02);
 }
 
+.btn-outline-light {
+  margin-left: 20px !important;
+  border: 0px !important;
+  border-radius: 10px !important;
+  &:hover{
+    color: #FE346E !important;
+  }
+}
+
+.btn-check:checked+.btn-outline-light {
+  background-color: #D2FAFB !important;
+  color: #FE346E !important;
+}
+
 //===Clients====
 .client-icons {
   margin: 10px !important;
