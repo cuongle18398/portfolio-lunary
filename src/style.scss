@@ -1045,9 +1045,12 @@ button:focus {
 
 .btn-check:checked+.btn-outline-light {
   background-color: #D2FAFB !important;
+  border: 0px !important;
   color: #FE346E !important;
 }
-
+.btn-check:focus+.btn-outline-light, .btn-outline-light:focus{
+  box-shadow: none !important;
+}
 //===Clients====
 .client-icons {
   margin: 10px !important;
