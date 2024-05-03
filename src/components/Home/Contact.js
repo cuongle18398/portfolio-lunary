@@ -11,7 +11,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 function Contact() {
 
     return (
-        <Container fluid className="home-contact-section alt-section" id="contact">
+        <Container fluid className="home-contact-section" id="contact">
             <Container>
                 <Row id="contact">
                     <Col md={12} className="home-contact-social contact">

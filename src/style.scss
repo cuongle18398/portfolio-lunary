@@ -479,11 +479,15 @@ button:focus {
   padding-inline-start: 0 !important;
 }
 
+.home-contact-section{
+  background-color: #D6EEF0;
+}
+
 .home-contact-social {
   text-align: center !important;
   padding-top: 10px;
   padding-bottom: 30px;
-  color: white !important;
+  color: #001B79 !important;
 }
 
 .home-social-icons {
@@ -494,7 +498,7 @@ button:focus {
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: #1640D6 !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
 }
@@ -639,7 +643,7 @@ button:focus {
 }
 
 .icon-colour {
-  color: var(--imp-text-color) !important;
+  color: white !important;
 }
 
 /* --------- */
@@ -770,7 +774,7 @@ button:focus {
 }
 
 .card-header{
-  padding-top: 20px !important;
+  padding: 0px !important;
   font-size: 2rem;
 }
 
@@ -810,7 +814,15 @@ button:focus {
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
-  margin-top: 2.5em;
+  margin-top: 1em;
+}
+.project-title {
+  text-align: left;
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+  margin: 1em;
 }
 
 /* --------- */

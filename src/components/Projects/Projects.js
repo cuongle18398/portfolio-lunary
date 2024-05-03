@@ -4,13 +4,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import ProjectCard from "./ProjectCards";
-import socialpost from "../../Assets/Projects/Project-Bg/social-post.png";
-import illu from "../../Assets/Projects/Project-Bg/illu.png";
-import layout from "../../Assets/Projects/Project-Bg/layout.png";
+import schneider from "../../Assets/Projects/Digital/Schneider Electric.png";
+import pana from "../../Assets/Projects/Digital/Panasonic.png";
+import tripbooking from "../../Assets/Projects/Digital/TripBooking.png";
+import honda from "../../Assets/Projects/Digital/Honda.png";
+import koc from "../../Assets/Projects/Digital/KOC.png";
 
-function Projects() {
+function Projects(props) {
 
-  const [checked, setChecked] = useState(false);
   const [radioValue, setRadioValue] = useState('1');
 
   const radios = [
@@ -19,13 +20,20 @@ function Projects() {
     { name: 'Branding', value: '3' },
     { name: 'More', value: '4' },
   ];
+
   return (
 
     <Container fluid className="project-section" id="project">
       <Container>
-        <h1 className="project-heading">
-          MY <strong className="purple">PROJECTS </strong>
-        </h1>
+        {props.type === "home" ? (
+          <h1 className="project-heading">
+            MY <strong className="purple">PROJECTS </strong>
+          </h1>
+        ) : (
+          <h1 className="project-heading">
+            OTHER <strong className="purple">PROJECTS </strong>
+          </h1>
+        )}
         <p style={{ color: "white" }}>
           Where my journey has begun.......
         </p>
@@ -48,34 +56,61 @@ function Projects() {
         <br />
         <br />
         <Row>
-          <Col md={6} className="project-container">
-            <ProjectCard
-              imgPath={socialpost}
-              title="Social Post"
-              Link='/socialposts'
-            />
-          </Col>
-          <Col md={6} className="project-container">
-            <ProjectCard
-              imgPath={illu}
-              title="Event"
-              Link='/event'
-            />
-          </Col>
-          <Col md={6} className="project-container">
-            <ProjectCard
-              imgPath={illu}
-              title="Illustration"
-              Link='/illustration'
-            />
-          </Col>
-          <Col md={6} className="project-container">
-            <ProjectCard
-              imgPath={layout}
-              title="Branding"
-              Link='/branding'
-            />
-          </Col>
+          {radioValue === '1' ? (
+            <Row>
+              <Col md={4} className="project-container">
+                <ProjectCard
+                  imgPath={schneider}
+                  title="Schneider Electric"
+                  Link='/schneider-electric'
+                />
+              </Col>
+              <Col md={4} className="project-container">
+                <ProjectCard
+                  imgPath={pana}
+                  title="Panasonic"
+                  Link='/panasonic'
+                />
+              </Col>
+              <Col md={4} className="project-container">
+                <ProjectCard
+                  imgPath={tripbooking}
+                  title="Trip Booking"
+                  Link='/trip-booking'
+                />
+              </Col>
+              <Col md={8} className="project-container">
+                <ProjectCard
+                  imgPath={honda}
+                  title="Honda"
+                  Link='/honda'
+                />
+              </Col>
+              <Col md={4} className="project-container">
+                <ProjectCard
+                  imgPath={koc}
+                  title="KOC"
+                  Link='/koc'
+                />
+              </Col>
+            </Row>
+          ) : radioValue === '2' ? (
+            <div>
+              event
+            </div>
+          ) : radioValue === '3' ? (
+            <div>
+              braning
+            </div>
+          ) : radioValue === '4' ? (
+            <div>
+              more
+            </div>
+          ) : (
+            <div>
+              <h2>Không tìm thấy nội dung này !</h2>
+            </div>
+          )}
         </Row>
       </Container>
     </Container>

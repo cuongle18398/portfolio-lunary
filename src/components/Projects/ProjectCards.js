@@ -11,11 +11,11 @@ function ProjectCards(props) {
       backgroundImage: `url("${props.imgPath}")`,
     }}>
       <div className="cards-content">
-        <Card.Header>{props.title}</Card.Header>
         <Card.Body>
           <Card.Img variant="top" src={props.imgPath} alt="card-img" />
         </Card.Body>
         <Card.Footer>
+          <h2>{props.title}</h2>
           <Link to={props.Link}>
             <Button variant="primary">
               <CgWebsite /> &nbsp;

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
-import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
@@ -39,12 +38,12 @@ function App() {
               <ScrollToTop />
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/socialposts"
+                <Route path="/schneider-electric"
                   element={
                     <ProjectCategory
-                      title="MY SOCIAL POSTS"
+                      title="Digital Post"
                       imgFilter="SocialPost"
-                      section={['Honda', 'Koca', 'Panasonic', 'PNJ', 'SE', 'TripBooking']}
+                      section={['Schneider Electric']}
                     />}
                 />
                 <Route path="/illustration"

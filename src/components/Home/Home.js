@@ -91,7 +91,7 @@ const Home = () => {
         </Container>
       </Container>
       <Home2 />
-      <Projects />
+      <Projects type="home" />
       <Contact />
     </section>
   );
