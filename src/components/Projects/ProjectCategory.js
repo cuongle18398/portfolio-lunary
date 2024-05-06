@@ -28,22 +28,28 @@ const ProjectCategory = (props) => {
                             <br />
                             <br />
                             <div className="project-list">
-                                {section.map((item, index) => (
-                                    <div>
-                                        <h1 className="project-title">
-                                            <strong>{props.title}</strong> <span> {'-'} </span> {item}
-                                        </h1>
-                                        <Row className="project-content">
-                                            {imageList.map((image, index) => (
-                                                image.includes(props.imgFilter) && image.includes(item) ? (
-                                                    <Col key={index} sm={12} md={12} lg={6} className="project-item">
-                                                        <img src={image} className="img-fluid" alt={`Project_img_${index}`} />
-                                                    </Col>
-                                                ) : null
-                                            ))}
-                                        </Row>
-                                    </div>
-                                ))}
+                                <div>
+                                    <h1 className="project-title">
+                                        <strong>{props.title}</strong> <span> {'-'} </span> {props.subTitle}
+                                    </h1>
+                                    <Row className="project-content">
+                                        {imageList.map((image, index) => (
+                                            image.includes(props.imgFilter) && image.includes(props.subTitle) && image.includes("C4") ? (
+                                                <Col key={index} sm={12} md={12} lg={4} className="project-item">
+                                                    <img src={image} className="img-fluid" alt={`Project_img_${index}`} />
+                                                </Col>
+                                            ) : image.includes(props.imgFilter) && image.includes(props.subTitle) && image.includes("C6") ? (
+                                                <Col key={index} sm={12} md={12} lg={6} className="project-item">
+                                                    <img src={image} className="img-fluid" alt={`Project_img_${index}`} />
+                                                </Col>
+                                            ) : image.includes(props.imgFilter) && image.includes(props.subTitle) && image.includes("C8") ? (
+                                                <Col key={index} sm={12} md={12} lg={8} className="project-item">
+                                                    <img src={image} className="img-fluid" alt={`Project_img_${index}`} />
+                                                </Col>
+                                            ) : null
+                                        ))}
+                                    </Row>
+                                </div>
                             </div>
                         </motion.div>
                     </AnimatePresence>

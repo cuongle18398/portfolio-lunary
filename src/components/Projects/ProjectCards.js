@@ -18,7 +18,6 @@ function ProjectCards(props) {
           <h2>{props.title}</h2>
           <Link to={props.Link}>
             <Button variant="primary">
-              <CgWebsite /> &nbsp;
               Read More
             </Button>
           </Link>

@@ -26,17 +26,19 @@ function Projects(props) {
     <Container fluid className="project-section" id="project">
       <Container>
         {props.type === "home" ? (
-          <h1 className="project-heading">
-            MY <strong className="purple">PROJECTS </strong>
-          </h1>
+          <>
+            <h1 className="project-heading">
+              MY <strong className="purple">PROJECTS </strong>
+            </h1>
+            <p style={{ color: "white" }}>
+              Where my journey has begun.......
+            </p>
+          </>
         ) : (
           <h1 className="project-heading">
-            OTHER <strong className="purple">PROJECTS </strong>
+            MY OTHERS <strong className="purple">PROJECTS </strong>
           </h1>
         )}
-        <p style={{ color: "white" }}>
-          Where my journey has begun.......
-        </p>
         <ButtonGroup>
           {radios.map((radio, idx) => (
             <ToggleButton
@@ -62,35 +64,35 @@ function Projects(props) {
                 <ProjectCard
                   imgPath={schneider}
                   title="Schneider Electric"
-                  Link='/schneider-electric'
+                  Link='/projects/schneider-electric'
                 />
               </Col>
               <Col md={4} className="project-container">
                 <ProjectCard
                   imgPath={pana}
                   title="Panasonic"
-                  Link='/panasonic'
+                  Link='/projects/panasonic'
                 />
               </Col>
               <Col md={4} className="project-container">
                 <ProjectCard
                   imgPath={tripbooking}
                   title="Trip Booking"
-                  Link='/trip-booking'
+                  Link='/projects/trip-booking'
                 />
               </Col>
               <Col md={8} className="project-container">
                 <ProjectCard
                   imgPath={honda}
                   title="Honda"
-                  Link='/honda'
+                  Link='/projects/honda'
                 />
               </Col>
               <Col md={4} className="project-container">
                 <ProjectCard
                   imgPath={koc}
-                  title="KOC"
-                  Link='/koc'
+                  title="KOCA"
+                  Link='/projects/koca'
                 />
               </Col>
             </Row>

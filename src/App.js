@@ -38,34 +38,44 @@ function App() {
               <ScrollToTop />
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/schneider-electric"
+                <Route path="/projects/schneider-electric"
                   element={
                     <ProjectCategory
-                      title="Digital Post"
-                      imgFilter="SocialPost"
-                      section={['Schneider Electric']}
+                      title="DIGITAL"
+                      imgFilter="Digital"
+                      subTitle="Schneider Electric"
                     />}
                 />
-                <Route path="/illustration"
+                <Route path="/projects/panasonic"
                   element={
                     <ProjectCategory
-                      title="MY ILLUSTRATION"
-                      imgFilter="Illustration"
-                      section={['Avatar', 'Character', 'Template']}
+                      title="DIGITAL"
+                      imgFilter="Digital"
+                      subTitle="Panasonic"
                     />}
                 />
-                <Route path="/event"
+                <Route path="/projects/trip-booking"
                   element={
                     <ProjectCategory
-                      title="MY EVENT"
-                      imgFilter="Event"
+                      title="DIGITAL"
+                      imgFilter="Digital"
+                      subTitle="Trip Booking"
                     />}
                 />
-                <Route path="/branding"
+                <Route path="/projects/honda"
                   element={
                     <ProjectCategory
-                      title="MY BRANDING"
-                      imgFilter="Branding"
+                      title="DIGITAL"
+                      imgFilter="Digital"
+                      subTitle="Honda"
+                    />}
+                />
+                <Route path="/projects/koca"
+                  element={
+                    <ProjectCategory
+                      title="DIGITAL"
+                      imgFilter="Digital"
+                      subTitle="KOCA"
                     />}
                 />
                 <Route path="*" element={<Navigate to="/" />} />
