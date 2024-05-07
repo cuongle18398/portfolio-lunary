@@ -13,7 +13,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.scss";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ProjectCategory from "./components/Projects/ProjectCategory";
+import ProjectDetails from "./components/Projects/ProjectDetails";
+import ProjectDetails2 from "./components/Projects/ProjectDetails2";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -38,44 +39,57 @@ function App() {
               <ScrollToTop />
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/projects/schneider-electric"
+                <Route path="/digital/schneider-electric"
                   element={
-                    <ProjectCategory
+                    <ProjectDetails
                       title="DIGITAL"
                       imgFilter="Digital"
                       subTitle="Schneider Electric"
                     />}
                 />
-                <Route path="/projects/panasonic"
+                <Route path="/digital/panasonic"
                   element={
-                    <ProjectCategory
+                    <ProjectDetails
                       title="DIGITAL"
                       imgFilter="Digital"
                       subTitle="Panasonic"
                     />}
                 />
-                <Route path="/projects/trip-booking"
+                <Route path="/digital/trip-booking"
                   element={
-                    <ProjectCategory
+                    <ProjectDetails
                       title="DIGITAL"
                       imgFilter="Digital"
                       subTitle="Trip Booking"
                     />}
                 />
-                <Route path="/projects/honda"
+                <Route path="/digital/honda"
                   element={
-                    <ProjectCategory
+                    <ProjectDetails
                       title="DIGITAL"
                       imgFilter="Digital"
                       subTitle="Honda"
                     />}
                 />
-                <Route path="/projects/koca"
+                <Route path="/digital/koca"
                   element={
-                    <ProjectCategory
+                    <ProjectDetails
                       title="DIGITAL"
                       imgFilter="Digital"
                       subTitle="KOCA"
+                    />}
+                />
+                <Route path="/event/pfizer-aspergillosis"
+                  element={
+                    <ProjectDetails2
+                      title="EVENT"
+                      imgFilter="Event"
+                      imgFilterSub="PfizerAspergillosis"
+                      subTitle={<span dangerouslySetInnerHTML={{ __html: "WHAT DO YOU KNOW ABOUT <strong class='purple'> ASPERGILLOSIS? </strong> - PFIZER" }} />}
+                      subDateTime="16.03.2024"
+                      intro={<span dangerouslySetInnerHTML={{ __html: "Bệnh <strong> Nấm phổi xâm lấn </strong> là bệnh lý nguy hiểm có nguy cơ tử vong cao nếu như không được phát hiện và điều trị kịp thời. <br/> <br/> Sự kiện được tổ chức với mục đích chia sẻ về câu chuyện của các bệnh nhân Nấm phổi cũng như giải đáp các thắc mắc về bệnh lý và cách điều trị được thực hiện bởi <strong>  các chuyên gia bác sĩ của Pfizer </strong>  " }} />}
+                      section={["keyvisual", "e-invitation", "tent card", "poster"]}
+                      author={<span dangerouslySetInnerHTML={{ __html: "<strong> Senior Art Director </strong> : Ninh Huynh <br/> <strong> 2D Design </strong> : Tho Pham" }} />}
                     />}
                 />
                 <Route path="*" element={<Navigate to="/" />} />

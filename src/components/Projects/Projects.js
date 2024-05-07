@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
@@ -9,6 +9,10 @@ import pana from "../../Assets/Projects/Digital/Panasonic.png";
 import tripbooking from "../../Assets/Projects/Digital/TripBooking.png";
 import honda from "../../Assets/Projects/Digital/Honda.png";
 import koc from "../../Assets/Projects/Digital/KOC.png";
+import shopee from "../../Assets/Projects/Event/Event_mainpage_02_C4.png";
+import hpo from "../../Assets/Projects/Event/Event_mainpage_03_C4.jpg";
+import pfizer from "../../Assets/Projects/Event/Event_mainpage_04_C8.png";
+import rayno from "../../Assets/Projects/Event/Event_mainpage_05_C4.jpg";
 
 function Projects(props) {
 
@@ -64,42 +68,76 @@ function Projects(props) {
                 <ProjectCard
                   imgPath={schneider}
                   title="Schneider Electric"
-                  Link='/projects/schneider-electric'
+                  Link='/digital/schneider-electric'
                 />
               </Col>
               <Col md={4} className="project-container">
                 <ProjectCard
                   imgPath={pana}
                   title="Panasonic"
-                  Link='/projects/panasonic'
+                  Link='/digital/panasonic'
                 />
               </Col>
               <Col md={4} className="project-container">
                 <ProjectCard
                   imgPath={tripbooking}
                   title="Trip Booking"
-                  Link='/projects/trip-booking'
+                  Link='/digital/trip-booking'
                 />
               </Col>
               <Col md={8} className="project-container">
                 <ProjectCard
                   imgPath={honda}
                   title="Honda"
-                  Link='/projects/honda'
+                  Link='/digital/honda'
                 />
               </Col>
               <Col md={4} className="project-container">
                 <ProjectCard
                   imgPath={koc}
                   title="KOCA"
-                  Link='/projects/koca'
+                  Link='/digital/koca'
                 />
               </Col>
             </Row>
           ) : radioValue === '2' ? (
-            <div>
-              event
-            </div>
+            <Row>
+              <Col md={4} className="project-container">
+                <ProjectCard
+                  imgPath={schneider}
+                  title="Schneider Electric"
+                  Link='/event/schneider-electric'
+                />
+              </Col>
+              <Col md={4} className="project-container">
+                <ProjectCard
+                  imgPath={shopee}
+                  title="Shopee"
+                  Link='/event/shopee'
+                />
+              </Col>
+              <Col md={4} className="project-container">
+                <ProjectCard
+                  imgPath={hpo}
+                  title="VAN XUAN GROUP"
+                  Link='/event/van-xuan-group'
+                />
+              </Col>
+              <Col md={8} className="project-container">
+                <ProjectCard
+                  imgPath={pfizer}
+                  title="PFIZER - Aspergillosis"
+                  Link='/event/pfizer-aspergillosis'
+                />
+              </Col>
+              <Col md={4} className="project-container">
+                <ProjectCard
+                  imgPath={rayno}
+                  title="VIETMAP RAYNO"
+                  Link='/event/vietmap-rayno'
+                />
+              </Col>
+            </Row>
           ) : radioValue === '3' ? (
             <div>
               braning

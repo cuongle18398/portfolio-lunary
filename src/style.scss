@@ -816,15 +816,37 @@ button:focus {
   padding-top: 10px !important;
   margin-top: 1em;
 }
+.project-section-title{
+  margin: 1em !important;
+}
 .project-title {
   text-align: left;
   color: white !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
-  margin: 1em;
+  &.center{
+    text-align: center !important;
+    padding-top: 0px !important;
+    margin-top: 0.5em;
+  }
 }
-
+.project-subtitle {
+  text-align: center !important;
+}
+.project-section-intro{
+  margin: auto !important;
+  padding-bottom: 2em;
+  text-align: justify;
+  width: 30%;
+  color: #D2FAFB;
+}
+.project-section-subtitle{
+  text-transform: uppercase;
+}
+.project-author{
+  font-weight: thin;
+}
 /* --------- */
 /* About */
 /* --------- */
@@ -1107,7 +1129,16 @@ button:focus {
   background-image: var(--section-background-color) !important;
   color: white !important;
 }
-
+.project-content-alt {
+  // box-shadow: 7px -6px 14px -2px rgba(38,41,46,0.87);
+  // -webkit-box-shadow: 7px -6px 14px -2px rgba(38,41,46,0.87);
+  // -moz-box-shadow: 7px -6px 14px -2px rgba(38,41,46,0.87);
+  // background-color: rgba(147, 138, 138, 0.42) !important;
+  // backdrop-filter: blur(1px);
+  // border-radius: 20px;
+  margin: 20px;
+  padding: 10px 5px;
+}
 .project-content {
   box-shadow: 7px -6px 14px -2px rgba(38,41,46,0.87);
   -webkit-box-shadow: 7px -6px 14px -2px rgba(38,41,46,0.87);
@@ -1118,12 +1149,14 @@ button:focus {
   margin: 20px;
   padding: 10px 5px;
 }
-.project-item img {
+.project-item{
   padding: 15px 0px;
   margin: auto;
-  transition: all 0.5s ease 0s !important;
-  &:hover {
-    transform: scale(1.02) !important;
-    overflow: hidden !important;
+  img {
+    transition: all 0.5s ease 0s !important;
+    &:hover {
+      transform: scale(1.02) !important;
+      overflow: hidden !important;
+    }
   }
 }
