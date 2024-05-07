@@ -14,10 +14,10 @@ function ProjectCards(props) {
           <Card.Img variant="top" src={props.imgPath} alt="card-img" />
         </Card.Body>
         <Card.Footer>
-          <h2>{props.title}</h2>
+          <h3>{props.title}</h3>
           <Link to={props.Link}>
-            <Button variant="primary">
-              Read More
+            <Button variant="primary" className="font-thin">
+              <strong>Read More</strong>
             </Button>
           </Link>
         </Card.Footer>

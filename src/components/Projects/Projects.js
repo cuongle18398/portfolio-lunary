@@ -34,7 +34,7 @@ function Projects(props) {
             <h1 className="project-heading">
               MY <strong className="purple">PROJECTS </strong>
             </h1>
-            <p style={{ color: "white" }}>
+            <p className="font-thin" style={{ color: "white", fontSize: "16px" }}>
               Where my journey has begun.......
             </p>
           </>

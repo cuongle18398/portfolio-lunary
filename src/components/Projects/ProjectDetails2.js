@@ -40,7 +40,7 @@ const ProjectDetails2 = (props) => {
                                             {props.subDateTime}
                                         </h3>
                                     </section>
-                                    <section className="project-section-intro">
+                                    <section className="project-section-intro font-thin">
                                         {props.intro}
                                     </section>
                                     {section.map((item, index) => (

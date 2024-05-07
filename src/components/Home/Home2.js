@@ -75,7 +75,7 @@ function Home2() {
             <h1 className="font-thin home-about-title">
               <img src={sao4} alt="sao4" /> WHAT <span className="purple"> I DO </span> ?
             </h1>
-            <p className="font-thin">I'm here to help you out with anything related to visual design, branding, or creating eye-catching illustrations. Just contact me anytime to talk about it.</p>
+            <p className="font-thin"><strong>I'm here to help you out with anything related to visual design, branding, or creating eye-catching illustrations. Just contact me anytime to talk about it.</strong></p>
             <h2 className="home-do">Digital <b className="purple">Post</b></h2>
             <h2 className="home-do"><b className="purple">Layout</b> Design</h2>
             <h2 className="home-do"><b className="purple">Brandings</b> Design</h2>
