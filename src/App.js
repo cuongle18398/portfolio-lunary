@@ -79,6 +79,19 @@ function App() {
                       subTitle="KOCA"
                     />}
                 />
+                <Route path="/event/schneider-electric"
+                  element={
+                    <ProjectDetails2
+                      title="EVENT"
+                      imgFilter="Event"
+                      imgFilterSub="schneiderelectric"
+                      subTitle={<span dangerouslySetInnerHTML={{ __html: "schneiderelectric" }} />}
+                      subDateTime=""
+                      intro=""
+                      section={["keyvisual"]}
+                      author=""
+                    />}
+                />
                 <Route path="/event/shopee"
                   element={
                     <ProjectDetails2

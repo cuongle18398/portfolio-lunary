@@ -19,11 +19,10 @@ function Projects(props) {
   const scrollHandler = () => {
     var project = document.getElementById('project');
 
-    if (window.scrollY > 1750) {
-      project.classList.remove('hide');
-    } else {
+    if (props.type !== "home") {
       project.classList.add('hide');
     }
+
   }
 
   window.addEventListener("scroll", scrollHandler);
