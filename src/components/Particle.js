@@ -8,10 +8,10 @@ const Particle = () => {
       params={{
         particles: {
           number: {
-            value: 160,
+            value: 200,
             density: {
               enable: true,
-              value_area: 1500,
+              value_area: 1200,
             },
           },
           line_linked: {
@@ -20,10 +20,10 @@ const Particle = () => {
           },
           move: {
             direction: "right",
-            speed: 0.05,
+            speed: 0.2,
           },
           size: {
-            value: 1,
+            value: 1.2,
           },
           opacity: {
             anim: {

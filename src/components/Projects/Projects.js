@@ -16,6 +16,18 @@ import rayno from "../../Assets/Projects/Event/Event_mainpage_05_C4.jpg";
 
 function Projects(props) {
 
+  const scrollHandler = () => {
+    var project = document.getElementById('project');
+
+    if (window.scrollY > 1750) {
+      project.classList.remove('hide');
+    } else {
+      project.classList.add('hide');
+    }
+  }
+
+  window.addEventListener("scroll", scrollHandler);
+
   const [radioValue, setRadioValue] = useState('1');
 
   const radios = [
