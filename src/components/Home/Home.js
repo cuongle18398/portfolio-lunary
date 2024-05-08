@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Col } from "react-bootstrap";
 import { motion, AnimatePresence } from "framer-motion";
 import Particle from "../Particle";
-import Home2 from "./Home2";
+import About from "./About";
 import { CiCircleChevDown, CiCircleChevUp } from "react-icons/ci";
 import Type from "./Type";
 import Contact from "./Contact";
@@ -90,7 +90,7 @@ const Home = () => {
           </AnimatePresence>
         </Container>
       </Container>
-      <Home2 />
+      <About />
       <Projects type="home" />
       <Contact />
     </section>

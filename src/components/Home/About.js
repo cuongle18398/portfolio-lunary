@@ -39,7 +39,7 @@ const scrollToSection = (sectionID) => {
   }
 };
 
-function Home2() {
+function About() {
 
   return (
     <Container fluid className="home-about-section" id="about">
@@ -87,4 +87,4 @@ function Home2() {
     </Container >
   );
 }
-export default Home2;
+export default About;
