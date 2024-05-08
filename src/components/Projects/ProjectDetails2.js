@@ -50,7 +50,11 @@ const ProjectDetails2 = (props) => {
                                             </h3>
                                             <Row className="project-content-alt">
                                                 {imageList.map((image, index) => (
-                                                    image.includes(props.imgFilter) && image.includes(props.imgFilterSub) && image.includes(item) && image.includes("C4") ? (
+                                                    image.includes(props.imgFilter) && image.includes(props.imgFilterSub) && image.includes(item) && image.includes("BG") ? (
+                                                        <Col key={index} sm={12} md={12} lg={10} className="project-item item-bg">
+                                                            <img src={image} className="img-fluid" alt={`Project_img_${index}`} />
+                                                        </Col>
+                                                    ) : image.includes(props.imgFilter) && image.includes(props.imgFilterSub) && image.includes(item) && image.includes("C4") ? (
                                                         <Col key={index} sm={12} md={12} lg={4} className="project-item">
                                                             <img src={image} className="img-fluid" alt={`Project_img_${index}`} />
                                                         </Col>

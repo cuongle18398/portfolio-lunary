@@ -9,7 +9,9 @@ html {
 .purple {
   color: var(--imp-text-color) !important;
 }
-
+.cyan {
+  color: #D2FAFB !important
+}
 button:focus {
   box-shadow: none !important;
 }
@@ -1153,6 +1155,15 @@ button:focus {
 .project-item{
   padding: 15px 0px;
   margin: auto;
+  // backdrop-filter: blur(1px);
+  &.item-bg{
+    box-shadow: 7px -6px 14px -2px rgba(38,41,46,0.87);
+    -webkit-box-shadow: 7px -6px 14px -2px rgba(2, 2, 3, 0.87);
+    -moz-box-shadow: 7px -6px 14px -2px rgba(38,41,46,0.87);
+    background-color: rgba(147, 138, 138, 0.42) !important;
+    backdrop-filter: blur(1px);
+    border-radius: 5px;
+  }
   img {
     transition: all 0.5s ease 0s !important;
     &:hover {
