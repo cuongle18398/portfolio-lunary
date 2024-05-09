@@ -698,6 +698,10 @@ button:focus {
 /* --------- */
 /* Projects */
 /* --------- */
+.project-list{
+  letter-spacing: .18rem !important;
+}
+
 .project-section {
   position: relative !important;
   padding-top: 50px !important;
@@ -827,6 +831,7 @@ button:focus {
 }
 .project-section-title{
   margin: 1em !important;
+  padding-bottom: 1em;
 }
 .project-title {
   text-align: left;
@@ -847,7 +852,7 @@ button:focus {
   margin: auto !important;
   padding-bottom: 2em;
   text-align: justify;
-  width: 30%;
+  width: 36%;
   color: white;
 }
 .project-section-subtitle{

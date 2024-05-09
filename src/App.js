@@ -124,9 +124,9 @@ function App() {
                       title="EVENT"
                       imgFilter="Event"
                       imgFilterSub="Vanxuangroup"
-                      subTitle={<span dangerouslySetInnerHTML={{ __html: "<span class='cyan'>THE BRIDGE TO GLORY </span> - VAN XUAN GROUP" }} />}
+                      subTitle={<span dangerouslySetInnerHTML={{ __html: "THE BRIDGE TO GLORY  - <span class='purple'> VAN XUAN GROUP </span>" }} />}
                       subDateTime="27.04.2024"
-                      intro={<span dangerouslySetInnerHTML={{ __html: "27.04.2024 vừa qua, Cầu kính trên không Happy One Central - dự án trọng điểm của Vạn Xuân Group đã chính thức xác lập kỷ lục “Cầu kính trên không cao nhất Việt Nam” " }} />}
+                      intro={<span dangerouslySetInnerHTML={{ __html: "27.04.2024 vừa qua, <strong> Cầu kính trên không Happy One Central - dự án trọng điểm của Vạn Xuân Group đã chính thức xác lập kỷ lục “Cầu kính trên không cao nhất Việt Nam </strong>” " }} />}
                       section={["keyvisual", "invitation", "poster", "standee"]}
                       author={<span dangerouslySetInnerHTML={{ __html: "<strong> Senior Art Director </strong> : Ninh Huynh <br/> <strong> 2D Design </strong> : Tho Pham <br/> <strong> 3D Design </strong> : Hoang Huynh " }} />}
                     />}
@@ -137,7 +137,7 @@ function App() {
                       title="EVENT"
                       imgFilter="Event"
                       imgFilterSub="Vietmaprayno"
-                      subTitle={<span dangerouslySetInnerHTML={{ __html: "LAUNCHING CEREMONY OF HEAT INSULATION FILM <strong class='purple'> VIETMAP 2024 </strong>" }} />}
+                      subTitle={<span dangerouslySetInnerHTML={{ __html: "LAUNCHING CEREMONY OF HEAT INSULATION FILM - <strong class='purple'> VIETMAP 2024 </strong>" }} />}
                       subDateTime=""
                       intro=""
                       section={["keyvisual"]}

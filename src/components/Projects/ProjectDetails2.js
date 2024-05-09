@@ -34,7 +34,7 @@ const ProjectDetails2 = (props) => {
                                             <strong>{props.title}</strong>
                                         </h1>
                                         <h2 className="project-subtitle">
-                                            {props.subTitle}
+                                            <strong> {props.subTitle} </strong>
                                         </h2>
                                         <h3 className="project-date">
                                             {props.subDateTime}
@@ -48,7 +48,7 @@ const ProjectDetails2 = (props) => {
                                             <h3 className="project-section-subtitle">
                                                 <strong>{item}</strong>
                                             </h3>
-                                            <Row className="project-content-alt">
+                                            <Row className="project-content">
                                                 {imageList.map((image, index) => (
                                                     image.includes(props.imgFilter) && image.includes(props.imgFilterSub) && image.includes(item) && image.includes("BG") ? (
                                                         <Col key={index} sm={12} md={12} lg={10} className="project-item item-bg">
