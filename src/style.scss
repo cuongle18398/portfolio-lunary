@@ -855,9 +855,11 @@ button:focus {
   width: 36%;
   color: white;
 }
+
 .project-section-subtitle{
   text-transform: uppercase;
   color: #D2FAFB;
+  margin-top: .5rem;
 }
 .project-author{
   font-weight: thin;
@@ -1145,7 +1147,6 @@ button:focus {
   color: white !important;
 }
 .project-content {
-  margin: 20px;
   padding: 10px 5px;
 }
 .project-item{
@@ -1166,5 +1167,16 @@ button:focus {
       transform: scale(1.02) !important;
       overflow: hidden !important;
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .project-section-intro{
+    width: 60%;
+  }
+}
+@media (max-width: 992px) {
+  .project-section-intro{
+    width: 75%;
   }
 }
