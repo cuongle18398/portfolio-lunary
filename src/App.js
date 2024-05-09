@@ -113,7 +113,7 @@ function App() {
                       imgFilterSub="PfizerAspergillosis"
                       subTitle={<span dangerouslySetInnerHTML={{ __html: "WHAT DO YOU KNOW ABOUT <span class='purple'> ASPERGILLOSIS? </span> - PFIZER" }} />}
                       subDateTime="16.03.2024"
-                      intro={<span dangerouslySetInnerHTML={{ __html: "Bệnh <strong> Nấm phổi xâm lấn </strong> là bệnh lý nguy hiểm có nguy cơ tử vong cao nếu như không được phát hiện và điều trị kịp thời. <br/> <br/> Sự kiện được tổ chức với mục đích chia sẻ về câu chuyện của các bệnh nhân Nấm phổi cũng như giải đáp các thắc mắc về bệnh lý và cách điều trị được thực hiện bởi <strong>  các chuyên gia bác sĩ của Pfizer </strong>  " }} />}
+                      intro={<span dangerouslySetInnerHTML={{ __html: "Bệnh <strong class='font-light'> Nấm phổi xâm lấn </strong> là bệnh lý nguy hiểm có nguy cơ tử vong cao nếu như không được phát hiện và điều trị kịp thời. <br/> <br/> Sự kiện được tổ chức với mục đích chia sẻ về câu chuyện của các bệnh nhân Nấm phổi cũng như giải đáp các thắc mắc về bệnh lý và cách điều trị được thực hiện bởi <strong class='font-light'>  các chuyên gia bác sĩ của Pfizer </strong>  " }} />}
                       section={["keyvisual", "e-invitation", "tent card", "poster"]}
                       author={<span dangerouslySetInnerHTML={{ __html: "<strong> Senior Art Director </strong> : Ninh Huynh <br/> <strong> 2D Design </strong> : Tho Pham" }} />}
                     />}
@@ -126,7 +126,7 @@ function App() {
                       imgFilterSub="Vanxuangroup"
                       subTitle={<span dangerouslySetInnerHTML={{ __html: "THE BRIDGE TO GLORY  - <span class='purple'> VAN XUAN GROUP </span>" }} />}
                       subDateTime="27.04.2024"
-                      intro={<span dangerouslySetInnerHTML={{ __html: "27.04.2024 vừa qua, <strong> Cầu kính trên không Happy One Central - dự án trọng điểm của Vạn Xuân Group đã chính thức xác lập kỷ lục “Cầu kính trên không cao nhất Việt Nam </strong>” " }} />}
+                      intro={<span dangerouslySetInnerHTML={{ __html: "27.04.2024 vừa qua, <strong class='font-light'> Cầu kính trên không Happy One Central - dự án trọng điểm của Vạn Xuân Group đã chính thức xác lập kỷ lục “Cầu kính trên không cao nhất Việt Nam </strong>” " }} />}
                       section={["keyvisual", "invitation", "poster", "standee"]}
                       author={<span dangerouslySetInnerHTML={{ __html: "<strong> Senior Art Director </strong> : Ninh Huynh <br/> <strong> 2D Design </strong> : Tho Pham <br/> <strong> 3D Design </strong> : Hoang Huynh " }} />}
                     />}
