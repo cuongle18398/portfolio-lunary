@@ -739,10 +739,10 @@ button:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transition: opacity 0.5s ;
+  transition: all 0.5s ease-in-out;
   .cards-content{
     opacity: 0;
-    transition: opacity 0.5s ;
+    transition: all 0.5s ease-in-out;
   }
 }
 .project-card-view:hover {
