@@ -45,9 +45,11 @@ const ProjectDetails2 = (props) => {
                                     </section>
                                     {section.map((item, index) => (
                                         <>
-                                            <h3 className="project-section-subtitle">
-                                                <strong>{item}</strong>
-                                            </h3>
+                                            {item !== "background" && (
+                                                <h3 className="project-section-subtitle">
+                                                    <strong>{item}</strong>
+                                                </h3>
+                                            )}
                                             <Row className="project-content">
                                                 {imageList.map((image, index) => (
                                                     image.includes(props.imgFilter) && image.includes(props.imgFilterSub) && image.includes(item) && image.includes("BG") ? (
@@ -79,7 +81,7 @@ const ProjectDetails2 = (props) => {
                                             </Row>
                                         </>
                                     ))}
-                                    <section className="project-author">
+                                    <section className="project-author font-thin">
                                         {props.author}
                                     </section>
                                 </div>

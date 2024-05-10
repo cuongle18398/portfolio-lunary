@@ -699,7 +699,7 @@ button:focus {
 /* Projects */
 /* --------- */
 .project-list{
-  letter-spacing: .18rem !important;
+  letter-spacing: .22rem !important;
 }
 
 .project-section {
@@ -859,7 +859,7 @@ button:focus {
 .project-section-subtitle{
   text-transform: uppercase;
   color: #D2FAFB;
-  margin-top: .5rem;
+  margin-top: 3rem;
 }
 .project-author{
   font-weight: thin;
@@ -1152,7 +1152,7 @@ button:focus {
 .project-item{
   padding: 15px 0px;
   margin: auto;
-  // backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
   &.item-bg{
     box-shadow: 5px 1px 6px 1px rgba(255,255,255,0.79);
     -webkit-box-shadow: 5px 1px 6px 1px rgba(255,255,255,0.79);

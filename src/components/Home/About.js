@@ -4,6 +4,7 @@ import myImg from "../../Assets/Cover/Ava.png";
 import Wtd from "../../Assets/Background/wtd.png";
 import sao4 from "../../Assets/Background/sao4canh.svg"
 
+
 const scrollHandler = () => {
   var about = document.getElementById('about');
   var text = document.getElementById('about-text');
