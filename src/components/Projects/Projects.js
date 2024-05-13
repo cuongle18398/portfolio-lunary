@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
@@ -46,7 +46,7 @@ function Projects(props) {
               MY <strong className="purple">PROJECTS </strong>
             </h1>
             <p className="font-thin" style={{ color: "white", fontSize: "16px" }}>
-              Where my journey has begun.......
+              <strong>Where my journey has begun.......</strong>
             </p>
           </>
         ) : (

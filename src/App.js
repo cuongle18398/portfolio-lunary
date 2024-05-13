@@ -124,7 +124,7 @@ function App() {
                       title="EVENT"
                       imgFilter="Event"
                       imgFilterSub="Vanxuangroup"
-                      subTitle={<span dangerouslySetInnerHTML={{ __html: "THE BRIDGE TO GLORY  - <span class='purple'> VAN XUAN GROUP </span>" }} />}
+                      subTitle={<span dangerouslySetInnerHTML={{ __html: "THE BRIDGE TO GLORY  - <strong class='purple'> VAN XUAN GROUP </strong>" }} />}
                       subDateTime="27.04.2024"
                       intro={<span dangerouslySetInnerHTML={{ __html: "27.04.2024 vừa qua, <strong class='font-light'> Cầu kính trên không Happy One Central - dự án trọng điểm của Vạn Xuân Group đã chính thức xác lập kỷ lục “Cầu kính trên không cao nhất Việt Nam </strong>” " }} />}
                       section={["keyvisual", "invitation", "poster", "standee"]}
@@ -157,7 +157,19 @@ function App() {
                       author=""
                     />}
                 />
-
+                <Route path="/branding/chou-studio"
+                  element={
+                    <ProjectDetails2
+                      title="BRANDING"
+                      imgFilter="Branding"
+                      imgFilterSub="choustudio"
+                      subTitle={<span dangerouslySetInnerHTML={{ __html: "<strong class='purple'>CHOU STUDIO</strong>" }} />}
+                      subDateTime=""
+                      intro={<span dangerouslySetInnerHTML={{ __html: "Dự án thiết kế <strong class='font-light'> thương hiệu CHOU STUDIO </strong>. Chou Studio là công  ty hoạt động trong lĩnh vực thời trang mang phong cách tinh tế và sang trọng. Công ty được thành lập vào năm 2023" }} />}
+                      section={["background", "draft ideas", "final idea", "font chữ thương hiệu", "stationery kit"]}
+                      author=""
+                    />}
+                />
                 <Route path="*" element={<Navigate to="/" />} />
               </Routes>
               <Footer />
