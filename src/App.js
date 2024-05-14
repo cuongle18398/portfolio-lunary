@@ -79,15 +79,15 @@ function App() {
                       subTitle="KOCA"
                     />}
                 />
-                <Route path="/event/schneider-electric"
+                <Route path="/event/pfizer-bigbosses"
                   element={
                     <ProjectDetails2
                       title="EVENT"
                       imgFilter="Event"
-                      imgFilterSub="schneiderelectric"
-                      subTitle={<span dangerouslySetInnerHTML={{ __html: "schneiderelectric" }} />}
-                      subDateTime=""
-                      intro=""
+                      imgFilterSub="pfizerbigbosses"
+                      subTitle={<span dangerouslySetInnerHTML={{ __html: "<span class='purple'>BIGBOSSES </span> - PFIZER" }} />}
+                      subDateTime="15.04.2024"
+                      intro={<span dangerouslySetInnerHTML={{ __html: "Sự kiện <strong class='font-light'> Bigbosses </strong> là sự kiện đón các sếp lớn của Pfizer về Việt Nam do toàn thể nhân viên khu vực miền Nam tổ chức. Tháng 4 vừa qua họ và toàn thể nhân viên Pfizer đã có những khoảng khắc đáng nhớ bên nhau." }} />}
                       section={["keyvisual"]}
                       author=""
                     />}
@@ -167,6 +167,32 @@ function App() {
                       subDateTime=""
                       intro={<span dangerouslySetInnerHTML={{ __html: "Dự án thiết kế <strong class='font-light'> thương hiệu CHOU STUDIO </strong>. Chou Studio là công  ty hoạt động trong lĩnh vực thời trang mang phong cách tinh tế và sang trọng. Công ty được thành lập vào năm 2023" }} />}
                       section={["background", "draft ideas", "final idea", "font chữ thương hiệu", "stationery kit"]}
+                      author=""
+                    />}
+                />
+                <Route path="/branding/chuhi-coffee"
+                  element={
+                    <ProjectDetails2
+                      title="BRANDING"
+                      imgFilter="Branding"
+                      imgFilterSub="chuhicoffee"
+                      subTitle={<span dangerouslySetInnerHTML={{ __html: "<strong class='purple'>CHUHI</strong> - COFFEE AND TEA" }} />}
+                      subDateTime=""
+                      intro={<span dangerouslySetInnerHTML={{ __html: "Dự án thiết kế <strong class='font-light'>thương hiệu trà sữa CHUHI</strong>. Logo Chuhi được sáng tạo từ các chữ cái C H U H I. Cái tên được lấy cảm hứng từ tên người chủ Trung Hiếu" }} />}
+                      section={["background"]}
+                      author=""
+                    />}
+                />
+                <Route path="/branding/hien-cafe"
+                  element={
+                    <ProjectDetails2
+                      title="BRANDING"
+                      imgFilter="Branding"
+                      imgFilterSub="hiencafe"
+                      subTitle={<span dangerouslySetInnerHTML={{ __html: "<strong class='purple'>HIEN</strong> - COFFEE AND TEA" }} />}
+                      subDateTime=""
+                      intro={<span dangerouslySetInnerHTML={{ __html: "Dự án thiết kế <strong class='font-light'>thương hiệu cafe Hiên</strong>. Hiên cafe mang phong cách mộc mạc đơn giản như cái tên Hiên" }} />}
+                      section={["background"]}
                       author=""
                     />}
                 />

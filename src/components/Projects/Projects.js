@@ -11,8 +11,13 @@ import honda from "../../Assets/Projects/Digital/Honda.png";
 import koc from "../../Assets/Projects/Digital/KOC.png";
 import shopee from "../../Assets/Projects/Event/Event_mainpage_02_C4.png";
 import hpo from "../../Assets/Projects/Event/Event_mainpage_03_C4.jpg";
-import pfizer from "../../Assets/Projects/Event/Event_mainpage_04_C8.png";
+import pfizer1 from "../../Assets/Projects/Event/Event_mainpage_01_C4.jpg";
+import pfizer2 from "../../Assets/Projects/Event/Event_mainpage_04_C8.png";
 import rayno from "../../Assets/Projects/Event/Event_mainpage_05_C4.jpg";
+import webuilder from "../../Assets/Projects/Branding/Branding_mainpage_01_C6.png";
+import chou from "../../Assets/Projects/Branding/Branding_mainpage_02_C6.png";
+import chuhi from "../../Assets/Projects/Branding/Branding_mainpage_03_C6.png";
+import hien from "../../Assets/Projects/Branding/Branding_mainpage_04_C6.png";
 
 function Projects(props) {
 
@@ -115,9 +120,9 @@ function Projects(props) {
             <Row>
               <Col md={4} className="project-container">
                 <ProjectCard
-                  imgPath={schneider}
-                  title="Schneider Electric"
-                  Link='/event/schneider-electric'
+                  imgPath={pfizer1}
+                  title="PFIZER - Bigbosses"
+                  Link='/event/pfizer-bigbosses'
                 />
               </Col>
               <Col md={4} className="project-container">
@@ -136,7 +141,7 @@ function Projects(props) {
               </Col>
               <Col md={8} className="project-container">
                 <ProjectCard
-                  imgPath={pfizer}
+                  imgPath={pfizer2}
                   title="PFIZER - Aspergillosis"
                   Link='/event/pfizer-aspergillosis'
                 />
@@ -150,9 +155,36 @@ function Projects(props) {
               </Col>
             </Row>
           ) : radioValue === '3' ? (
-            <div>
-              braning
-            </div>
+            <Row>
+              <Col md={6} className="project-container">
+                <ProjectCard
+                  imgPath={webuilder}
+                  title="WEBUILDERS"
+                  Link='/branding/webuilders'
+                />
+              </Col>
+              <Col md={6} className="project-container">
+                <ProjectCard
+                  imgPath={chou}
+                  title="CHOU STUDIO"
+                  Link='/branding/chou-studio'
+                />
+              </Col>
+              <Col md={6} className="project-container">
+                <ProjectCard
+                  imgPath={chuhi}
+                  title="CHUHI COFFEE"
+                  Link='/branding/chuhi-coffee'
+                />
+              </Col>
+              <Col md={6} className="project-container">
+                <ProjectCard
+                  imgPath={hien}
+                  title="HIÊN CAFE"
+                  Link='/branding/hien-cafe'
+                />
+              </Col>
+            </Row>
           ) : radioValue === '4' ? (
             <div>
               more
