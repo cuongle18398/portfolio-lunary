@@ -179,7 +179,7 @@ function App() {
                       subTitle={<span dangerouslySetInnerHTML={{ __html: "<strong class='purple'>CHUHI</strong> - COFFEE AND TEA" }} />}
                       subDateTime=""
                       intro={<span dangerouslySetInnerHTML={{ __html: "Dự án thiết kế <strong class='font-light'>thương hiệu trà sữa CHUHI</strong>. Logo Chuhi được sáng tạo từ các chữ cái C H U H I. Cái tên được lấy cảm hứng từ tên người chủ Trung Hiếu" }} />}
-                      section={["background"]}
+                      section={["background", "màu sắc thương hiệu", "font chữ thương hiệu", "cup"]}
                       author=""
                     />}
                 />
@@ -189,10 +189,10 @@ function App() {
                       title="BRANDING"
                       imgFilter="Branding"
                       imgFilterSub="hiencafe"
-                      subTitle={<span dangerouslySetInnerHTML={{ __html: "<strong class='purple'>HIEN</strong> - COFFEE AND TEA" }} />}
+                      subTitle={<span dangerouslySetInnerHTML={{ __html: "<strong class='purple'>HIEN</strong> CAFE" }} />}
                       subDateTime=""
                       intro={<span dangerouslySetInnerHTML={{ __html: "Dự án thiết kế <strong class='font-light'>thương hiệu cafe Hiên</strong>. Hiên cafe mang phong cách mộc mạc đơn giản như cái tên Hiên" }} />}
-                      section={["background"]}
+                      section={["background", "màu sắc thương hiệu"]}
                       author=""
                     />}
                 />

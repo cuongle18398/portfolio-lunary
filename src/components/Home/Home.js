@@ -90,7 +90,7 @@ const Home = () => {
           </AnimatePresence>
         </Container>
       </Container>
-      <About />
+      {/* <About /> */}
       <Projects type="home" />
       <Contact />
     </section>

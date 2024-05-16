@@ -21,16 +21,16 @@ import hien from "../../Assets/Projects/Branding/Branding_mainpage_04_C6.png";
 
 function Projects(props) {
 
-  const scrollHandler = () => {
-    var project = document.getElementById('project');
+  // const scrollHandler = () => {
+  //   var project = document.getElementById('project');
 
-    if (props.type !== "home") {
-      project.classList.add('hide');
-    }
+  //   if (props.type !== "home") {
+  //     project.classList.add('hide');
+  //   }
 
-  }
+  // }
 
-  window.addEventListener("scroll", scrollHandler);
+  // window.addEventListener("scroll", scrollHandler);
 
   const [radioValue, setRadioValue] = useState('1');
 
