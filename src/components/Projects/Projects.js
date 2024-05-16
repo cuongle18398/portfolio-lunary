@@ -187,7 +187,7 @@ function Projects(props) {
             </Row>
           ) : radioValue === '4' ? (
             <div>
-              more
+              <h2>Coming soon.. !</h2>
             </div>
           ) : (
             <div>
