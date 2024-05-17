@@ -21,16 +21,19 @@ import hien from "../../Assets/Projects/Branding/Branding_mainpage_04_C6.png";
 
 function Projects(props) {
 
-  // const scrollHandler = () => {
-  //   var project = document.getElementById('project');
+  const scrollHandler = () => {
+    var project = document.getElementById('project');
 
-  //   if (props.type !== "home") {
-  //     project.classList.add('hide');
-  //   }
+    if (window.scrollY > 1000) {
+      project.classList.add('hide');
+    } else {
+      project.classList.remove('hide');
+    }
+  };
 
-  // }
+  //props.type == "home" && 
 
-  // window.addEventListener("scroll", scrollHandler);
+  window.addEventListener("scroll", scrollHandler);
 
   const [radioValue, setRadioValue] = useState('1');
 
@@ -185,10 +188,6 @@ function Projects(props) {
                 />
               </Col>
             </Row>
-          ) : radioValue === '4' ? (
-            <div>
-              <h2>Coming soon.. !</h2>
-            </div>
           ) : (
             <div>
               <h2>Không tìm thấy nội dung này !</h2>

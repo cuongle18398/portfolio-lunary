@@ -84,7 +84,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as="a"
                 onClick={() => {
@@ -94,7 +94,7 @@ function NavBar() {
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             <Nav.Item>
               <Nav.Link
@@ -104,7 +104,7 @@ function NavBar() {
                   updateExpanded(false);
                 }}
               >
-                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Project
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projects
               </Nav.Link>
             </Nav.Item>
 
