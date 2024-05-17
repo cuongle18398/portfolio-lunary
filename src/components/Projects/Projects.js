@@ -21,15 +21,15 @@ import hien from "../../Assets/Projects/Branding/Branding_mainpage_04_C6.png";
 
 function Projects(props) {
 
-  // const scrollHandler = () => {
-  //   var project = document.getElementById('project');
+  const scrollHandler = () => {
+    var project = document.getElementById('project');
 
-  //   if (window.scrollY > 1000) {
-  //     project.classList.add('hide');
-  //   } else {
-  //     project.classList.remove('hide');
-  //   }
-  // };
+    if (window.scrollY > 1000) {
+      project.classList.add('hide');
+    } else {
+      project.classList.remove('hide');
+    }
+  };
 
   //props.type == "home" && 
 
