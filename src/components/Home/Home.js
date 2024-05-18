@@ -70,7 +70,7 @@ const Home = () => {
               <Col className="home-container home-header" id="bg">
                 <div>
                   <h1 className="home-title">WELCOME</h1>
-                  <h1 className="home-title sub">A <span className="purple"> passionate </span> & <span className="purple">creative</span> designer with strong focus on creating both visually <span className="purple">stunning  designs</span> . I'm here to solve your issues.</h1>
+                  <h1 className="home-title sub">A <span className="purple"> passionate </span> & <span className="purple">creative</span> designer with strong focus on creating both visually <span className="purple">stunning  designs</span>. I'm here to solve your issues.</h1>
                   <br />
                 </div>
                 <div className="myimg"></div>
