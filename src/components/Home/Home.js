@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Particle from "../Particle";
 // import About from "./About";
 import { CiCircleChevDown, CiCircleChevUp } from "react-icons/ci";
-import Type from "./Type";
+// import Type from "./Type";
 import Contact from "./Contact";
 import Projects from '../Projects/Projects'
 
@@ -62,19 +62,18 @@ const Home = () => {
               exit={{ opacity: 0 }}
             >
               <div className="bg-img" id="bg-img">
-                <div className="moon"></div>
-                <div className="myimg"></div>
+                {/* <div className="moon"></div> */}
+                
               </div>
               <div className="corner cloud-left preload" id="lcloud"></div>
               <div className="corner cloud-right preload" id="rcloud"></div>
               <Col className="home-container home-header" id="bg">
                 <div>
+                  <h1 className="home-title">WELCOME</h1>
+                  <h1 className="home-title sub">A <span className="purple"> passionate </span> & <span className="purple">creative</span> designer with strong focus on creating both visually <span className="purple">stunning  designs</span> . I'm here to solve your issues.</h1>
                   <br />
-                  <h1 className="home-title">Hello</h1>
-                  <h1 className="home-title behind">I am</h1>
-                  <h1 className="home-title title"><span className="purple">L U N A</span> R Y</h1>
-                  <Type />
                 </div>
+                <div className="myimg"></div>
               </Col>
               <div id="lead-down" className="bounce">
                 <span class="icon-container" onClick={() => scrollDown()}>

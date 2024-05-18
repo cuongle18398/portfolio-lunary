@@ -304,21 +304,19 @@ button:focus {
     //transform: translate(-30rem, -10rem); /* Điều chỉnh vị trí xuất phát của phần tử */
   }
   .home-title {
+    letter-spacing: 2px;
     position: relative !important;
-    color: #D6EEF0;
-    font-size: 6rem;
-    font-weight: 400;
-    text-align: left !important;
+    color: #FE346E;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center !important;
     margin: 0;
     z-index: 1;
-
-    &.title {
-      font-size: 9rem;
-      font-weight: bolder;
-    }
-
-    &.behind{
-      z-index: -99 !important;
+    &.sub{
+      padding-top: 10px;
+      color: #D6EEF0;
+      font-weight: 400;
+      padding-bottom: 300px;
     }
   }
 }
@@ -374,15 +372,24 @@ button:focus {
   color: #D2FAFB !important;
 }
 
+@media (max-width: 1200px) {
+  .myimg{
+    height: 22% !important;
+  }
+}
+
 @media (max-width: 767px) {
-  .Typewriter {
-    display: none;
+  .cloud-left{
+    bottom: 50% !important;
+  }
+  .myimg{
+    height: 10% !important;
   }
   .home-title {
-    font-size: 5.5em !important
-  }
-  .title{
-    font-size: 7.5rem !important;
+    font-size: 1.2rem !important;
+    &.sub {
+    padding-bottom: 100px !important;
+    }
   }
 }
 
@@ -558,13 +565,13 @@ button:focus {
 
 .myimg{
   position: absolute;
-  background: url(./Assets/Background/me.png) no-repeat bottom;
+  background: url(./Assets/Background/Layer_1.png) no-repeat bottom;
   background-size: contain !important;
-  bottom: 0;
+  bottom: 8%;
   right: 0;
   opacity: 1;
   z-index: 0;
-  height: 80%;
+  height: 35%;
   width: 100%;
 }
 
