@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import myImg from "../../Assets/Cover/Ava.png";
+import myImg from "../../Assets/Background/Ava.png";
 import Wtd from "../../Assets/Background/wtd.png";
 import sao4 from "../../Assets/Background/sao4canh.svg"
 

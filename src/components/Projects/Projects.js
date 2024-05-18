@@ -24,7 +24,7 @@ function Projects(props) {
   const scrollHandler = () => {
     var project = document.getElementById('project');
 
-    if (window.scrollY > 1000) {
+    if (window.scrollY < 500) {
       project.classList.add('hide');
     } else {
       project.classList.remove('hide');
@@ -41,7 +41,7 @@ function Projects(props) {
     { name: 'Digital', value: '1' },
     { name: 'Event', value: '2' },
     { name: 'Branding', value: '3' },
-    { name: 'More', value: '4' },
+    // { name: 'More', value: '4' },
   ];
 
   return (

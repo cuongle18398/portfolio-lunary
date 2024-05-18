@@ -536,15 +536,6 @@ button:focus {
   margin-top: 3rem !important;
 }
 
-.corner {
-  background-size: cover !important;
-  position: fixed;
-  pointer-events: none;
-  z-index: -1;
-  height: 50%;
-  width:33%;
-}
-
 .bg-img {
   transition: all 0.5s ease-in-out;
   pointer-events: none;
@@ -577,13 +568,22 @@ button:focus {
   width: 100%;
 }
 
+.corner {
+  background-size: contain !important;
+  position: fixed;
+  pointer-events: none;
+  z-index: -1;
+  height: 50%;
+}
+
 
 .cloud-left{
   z-index: -1;
-  background: url(./Assets/Background/Group-21.png) no-repeat right top;
-  bottom: 0;
-  left: -18%;
-  width: 37% !important;
+  background: url(./Assets/Background/star.png) no-repeat left top;
+  bottom: 40%;
+  left: 2%;
+  width: 20% !important;
+  height: 30% !important;
   opacity: 1;
   transition: opacity 0.5s ease-in, transform 0.5s;
   &.hide {
@@ -708,10 +708,10 @@ button:focus {
   padding-bottom: 50px !important;
   opacity: 1;
   transition: all 0.5s ease-in-out;
-  // &.hide{
-  //   opacity: 0;
-  //   // transform: translate(0px, 50px);
-  // }
+  &.hide{
+    opacity: 0;
+    // transform: translate(0px, 50px);
+  }
 }
 
 .project-card {
