@@ -4,7 +4,7 @@ import {
     AiFillBehanceCircle,
 } from "react-icons/ai";
 import { FaFacebook, FaGooglePlus } from "react-icons/fa";
-import pdf from "../../Assets/CV/ThoPham_CV_2024.pdf";
+import pdf from "../../Assets/CV/CV_THOPHAM_design_2024.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
 
