@@ -191,7 +191,7 @@ function App() {
                       imgFilterSub="hiencafe"
                       subTitle={<span dangerouslySetInnerHTML={{ __html: "<strong class='purple'>HIEN</strong> CAFE" }} />}
                       subDateTime=""
-                      intro={<span dangerouslySetInnerHTML={{ __html: "Dự án thiết kế <strong class='font-light'>thương hiệu cafe Hiên</strong>. Hiên cafe mang phong cách mộc mạc đơn giản như cái tên Hiên" }} />}
+                      intro={<span dangerouslySetInnerHTML={{ __html: "Dự án thiết kế <strong class='font-light'>thương hiệu cafe Hiên</strong>. Hiên mang phong cách mộc mạc, tạo nên một không gian yên bình và ấm cúng, thích hợp cho những ai muốn tìm một nơi thư giãn và thoát khỏi nhịp sống hối hả của thành phố. Vì mang phong cách Việt Nam nên Hiên được làm theo dạng logo chữ kết hợp với font chữ 1FTV HF Gesco" }} />}
                       section={["background", "màu sắc thương hiệu"]}
                       author=""
                     />}

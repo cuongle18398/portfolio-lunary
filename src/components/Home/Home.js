@@ -63,14 +63,14 @@ const Home = () => {
             >
               <div className="bg-img" id="bg-img">
                 {/* <div className="moon"></div> */}
-                
+
               </div>
               <div className="corner cloud-left preload" id="lcloud"></div>
               <div className="corner cloud-right preload" id="rcloud"></div>
               <Col className="home-container home-header" id="bg">
                 <div>
                   <h1 className="home-title">WELCOME</h1>
-                  <h1 className="home-title sub">A <span className="purple"> passionate </span> & <span className="purple">creative</span> designer with strong focus on creating both visually <span className="purple">stunning  designs</span>. I'm here to solve your issues.</h1>
+                  <h1 className="home-title sub">A <strong className="purple"> passionate </strong> & <strong className="purple">creative</strong> designer with strong focus on creating both visually <strong className="purple">stunning  designs</strong>. I'm here to solve your issues.</h1>
                   <br />
                 </div>
                 <div className="myimg"></div>
