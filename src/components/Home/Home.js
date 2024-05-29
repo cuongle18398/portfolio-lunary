@@ -36,7 +36,7 @@ const scrollHandler = () => {
 window.addEventListener("scroll", scrollHandler);
 
 const scrollDown = () => {
-  const targetElement = document.getElementById('about');
+  const targetElement = document.getElementById('project');
   // Scroll đến phần tử mục tiêu
   targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
