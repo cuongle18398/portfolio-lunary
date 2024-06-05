@@ -7,7 +7,6 @@ import { Link, useNavigate } from "react-router-dom";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
-  AiOutlineUser,
   AiOutlineContacts
 } from "react-icons/ai";
 

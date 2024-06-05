@@ -2,9 +2,7 @@ import React from "react";
 import { Container, Col } from "react-bootstrap";
 import { motion, AnimatePresence } from "framer-motion";
 import Particle from "../Particle";
-// import About from "./About";
 import { CiCircleChevDown, CiCircleChevUp } from "react-icons/ci";
-// import Type from "./Type";
 import Contact from "./Contact";
 import Projects from '../Projects/Projects'
 
