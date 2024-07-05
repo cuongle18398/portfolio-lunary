@@ -11,7 +11,7 @@ import honda from "../../Assets/Projects/Digital/Honda.png";
 import koc from "../../Assets/Projects/Digital/KOC.png";
 import shopee from "../../Assets/Projects/Event/Event_mainpage_02_C4.png";
 import hpo from "../../Assets/Projects/Event/Event_mainpage_03_C4.jpg";
-import pfizer1 from "../../Assets/Projects/Event/Event_mainpage_01_C4.jpg";
+import glamiss from "../../Assets/Projects/Event/Event_mainpage_01_C4.png";
 import pfizer2 from "../../Assets/Projects/Event/Event_mainpage_04_C8.png";
 import rayno from "../../Assets/Projects/Event/Event_mainpage_05_C4.jpg";
 import webuilder from "../../Assets/Projects/Branding/Branding_mainpage_01_C6.png";
@@ -123,9 +123,9 @@ function Projects(props) {
             <Row>
               <Col md={4} className="project-container">
                 <ProjectCard
-                  imgPath={pfizer1}
-                  title="PFIZER - Bigbosses"
-                  Link='/event/pfizer-bigbosses'
+                  imgPath={glamiss}
+                  title="GLAMISS COOL"
+                  Link='/event/glamiss-cool'
                 />
               </Col>
               <Col md={4} className="project-container">

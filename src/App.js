@@ -79,16 +79,16 @@ function App() {
                       subTitle="KOCA"
                     />}
                 />
-                <Route path="/event/pfizer-bigbosses"
+                <Route path="/event/glamiss-cool"
                   element={
                     <ProjectDetails2
                       title="EVENT"
                       imgFilter="Event"
-                      imgFilterSub="pfizerbigbosses"
-                      subTitle={<span dangerouslySetInnerHTML={{ __html: "<span class='purple'>BIGBOSSES </span> - PFIZER" }} />}
-                      subDateTime="15.04.2024"
-                      intro={<span dangerouslySetInnerHTML={{ __html: "Sự kiện <strong class='font-light'> Bigbosses </strong> là sự kiện đón các sếp lớn của Pfizer về Việt Nam do toàn thể nhân viên khu vực miền Nam tổ chức. Tháng 4 vừa qua họ và toàn thể nhân viên Pfizer đã có những khoảng khắc đáng nhớ bên nhau." }} />}
-                      section={["keyvisual"]}
+                      imgFilterSub="glamisscool"
+                      subTitle={<span dangerouslySetInnerHTML={{ __html: "MAT LANH DIU EM, CHO NANG DIU KEO <br/> <span class='purple'>GLAMISS COOL - 2024</span> " }} />}
+                      subDateTime=""
+                      intro={<span dangerouslySetInnerHTML={{ __html: "<strong class='font-light'>Glamiss Cool</strong> là một thương hiệu sản phẩm vệ sinh dành cho giới trẻ, nổi bật với áp dụng <strong class='font-light'>tinh thể bạc Nano Ag+</strong> và sử dụng <strong class='font-light'> thảo mộc bạc hà </strong> để mang lại trải nghiệm vệ sinh tối ưu. Các sản phẩm của Glamiss Cool được thiết kế để đáp ứng nhu cầu vệ sinh cá nhân với sự kết hợp giữa công nghệ tiên tiến và các thành phần tự nhiên, mang lại cảm giác sảng khoái và an toàn cho người dùng." }} />}
+                      section={["moodboard", "draft ideas", "keyvisual"]}
                       author=""
                     />}
                 />
