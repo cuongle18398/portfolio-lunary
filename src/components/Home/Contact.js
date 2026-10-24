@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import {
     AiFillBehanceCircle,
 } from "react-icons/ai";
-import { FaFacebook, FaGooglePlus } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import pdf from "../../Assets/CV/CV_THOPHAM_SENIOR_CREATIVE_DESIGNER.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
@@ -39,16 +39,6 @@ function Contact() {
                                     className="icon-colour  home-social-icons"
                                 >
                                     <FaFacebook />
-                                </a>
-                            </li>
-                            <li className="social-icons">
-                                <a
-                                    href=""
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="icon-colour  home-social-icons"
-                                >
-                                    <FaGooglePlus />
                                 </a>
                             </li>
                             <li className="social-icons">
