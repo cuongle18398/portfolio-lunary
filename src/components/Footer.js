@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillBehanceCircle,
 } from "react-icons/ai";
-import { FaFacebook, FaGooglePlus } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 
 function Footer() {
   let date = new Date();
@@ -27,16 +27,6 @@ function Footer() {
                 rel="noopener noreferrer"
               >
                 <FaFacebook />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href=""
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGooglePlus />
               </a>
             </li>
             <li className="social-icons">
